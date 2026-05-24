@@ -25,10 +25,11 @@ Focuses on rapid prototyping, hardware interfacing, and utility development.
 *   **Hardware Integration:** Implementation of the ESC/POS protocol for thermal printer management, including custom template engines.
 *   **Data Analysis & Tooling:** Specialized utilities for *Final Fantasy XIV* market data and crafting optimization.
 *   **General Automation:** A suite of scripts for system-level automation and data processing tasks.
+*   **Full stack:** The *TIPS* program contains a server, client and GUI for simulating virtual stores with specific stock limiations as well as printing.
+*   **Batch Processing:** A full simulation of the batch processing of payroll data is provided using a custom binary format, several external sorts and a mixture of C and Python
 
-### Low-Level Systems (C / C#)
-*   **C Utilities:** Projects focused on fundamental data structures, custom memory management, and systems-level experimentation.
-*   **C# Implementation:** Desktop-level utilities and architecture-focused prototypes.
+### Low-Level Systems (C / C++)
+*  **Data generation and management**
 
 ### Simulation and TTRPG Tooling
 These projects demonstrate the application of complex logic to interactive systems.
