@@ -32,20 +32,21 @@ dmg:1d6;range:50/75;uses:1;attr:dex;enc:2;license:1
 2. Scan `/stores/` for `*.toml`
 3. Parse each TOML into a `Store` object
 4. Apply filters, rarity caps, and flags to determine availability
-5. Expose API endpoints for:
-    - listing stores
-    - listing items in a store
-    - adding/removing items from cart
-    - checkout
-    - printing receipts
-The server also provides a simple GM console for:
-- enabling/disabling stores
-- adjusting stock
-- regenerating stock
-- creating new stores
+5. Expose FastAPI endpoints for:
+    - `GET /stores`: List available shops
+    - `GET /stores/{id}/inventory`: See merged stock and registry data
+    - `GET /items`: Full item registry dump
+    - `POST /start-session`: Initialize a user session
+    - `POST /sessions/{sid}/store/{id}`: Set active store for a user
+    - `POST /cart/add`: Add item to cart (deducts from store shelf)
+    - `POST /cart/remove`: Remove from cart (restores to store shelf)
+    - `POST /cart/cancel/{sid}`: Empty cart and restore all stock
+    - `POST /checkout`: Finalize sale and optional thermal print
+
+The server logic handles stock management, including "Use Boxes" calculation (1 box per 5 uses) for item stat blocks on receipts.
 
 ### Store Details
-A store TOML file is a simple file that defines a 'store' that players can buy from and has a few properties:
+Store files are located in the `/stores/` directory. Note: `id` is assigned automatically by the `StoreManager` based on load order.
 
 ```toml
 id = "storeid"
@@ -62,11 +63,8 @@ store_flags = flags in a list that trigger specific behavior (see below) for tha
 unlimited_stock  - No stock depletion when buying
 volatile_stock - Stock is regenerated every time a purchase is finalized
 all_items_available - Every item possible is available to buy
-
-bulk_discount - Items get cheaper as more are purchased
 variable_prices - Prices are randomly set (75-125% nominal)
-supply_and_demand - Buying an item makes it more expensive
-free_items - Items cost nothing
+free_items - All items in the store cost 0
 
 low_tax - Apply a sales tax of 1%
 med_tax - Apply a sales tax of 10%
@@ -168,49 +166,63 @@ classDiagram
         + parse_metadata(raw_string) dict$
     }
 
+    class CartItem {
+        + string name
+        + float price
+        + int quantity
+        + line_cost() float
+        + adjust_quantity(amount)
+    }
+
     class StoreManager {
-        - dict~string, Store~ _stores
+        + int total_stores
+        - dict~int, Store~ stores
         + load_stores(directory)
         + get_store(store_id) Store
-        + get_all_active_stores() list~Store~
+        + get_all_stores()
     }
 
     class Store {
-        + string id
+        + int id
         + string name
         + int max_rarity
         + float price_multiplier
         + list~string~ flags
-        - dict~string, StockItem~ inventory
+        + float taxes
+        + dict~string, StockItem~ inventory
         
         + generate_stock(ItemRegistry)
-        + get_current_price(item_name, quantity_in_cart) float
-        + checkout(cart_items)
-        - apply_tax(subtotal) float
+        + jitter_stock(ItemRegistry)
+        + calculate_taxes() float
+        + get_current_price(item_name) float
+        + get_current_stock(item_name) int
     }
 
     class StockItem {
         + string item_name
-        + int quantity
-        + float supply_demand_modifier
-        + decrease_stock(amount)
+        + string description
+        + int stock
+        + float price
+        + adjust_stock(amount)
     }
 
     class SessionManager {
-        - dict~string, Cart~ active_sessions
-        + create_session() string
+        - dict~string, dict~ active_sessions
+        + create_session(username, session_id)
         + get_cart(session_id) Cart
+        + set_active_store(session_id, store)
     }
 
     class Cart {
-        + string session_id
-        + dict~string, int~ items %% item_name -> quantity
-        + add_item(item_name, qty)
-        + remove_item(item_name, qty)
+        + int cart_id
+        + dict~string, CartItem~ contents
+        + calculate_subtotal() float
+        + calculate_total(tax_percent) float
     }
 
     ItemRegistry "1" *-- "many" Item : contains
     StoreManager "1" *-- "many" Store : manages
     Store "1" *-- "many" StockItem : contains
     SessionManager "1" *-- "many" Cart : tracks
+    Cart "1" *-- "many" CartItem : contains
 ```
