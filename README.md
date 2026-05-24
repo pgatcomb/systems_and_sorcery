@@ -9,20 +9,17 @@ It reflects two core pillars of my work:
 
 Everything here is self‑contained, documented, and ready to explore.
 
-📚 Table of Contents
+Table of Contents
 Rust Projects
-
 Python Projects
-
 C / C# Projects
-
 TTRPG & Game Tools
-
 Utilities & Miscellaneous
 
-Philosophy & Design Principles
 
-🦀 Rust Projects
+**Philosophy & Design Principles**
+
+Rust Projects
 Rust is where I explore systems programming, performance, and architectural clarity.
 
 rust_reactor
@@ -33,7 +30,7 @@ Focus areas:
 * real‑time updates
 * safe parallelism
 * rustsqlserver
-* 
+
 A lightweight SQLite‑backed server with custom query handling.
 Focus areas:
 *embedded databases
@@ -73,14 +70,14 @@ Focus areas:
 Item, shop, and receipt generators
 Tools for in‑world economies, NPC interactions, and printable artifacts.
 
-🧰 Utilities & Miscellaneous
+Utilities & Miscellaneous
 A grab‑bag of completed experiments, prototypes, and one‑off tools.
 
 * command‑line utilities
 * data parsers
 * teaching examples
 
-🧠 Philosophy & Design Principles
+Philosophy & Design Principles
 This codex is built on a few core ideas:
 
 Modularity
