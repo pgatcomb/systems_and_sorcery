@@ -1,0 +1,173 @@
+id,name,description,price,sell_price,weight,category
+1,Ballistic Vest,"Protection +4, TL 8. Flexible and semi-discreet flak jacket.",500,250,1,armor
+2,Ceramic Carapace,"Protection +10, TL 12. +6 Prot vs Lasers/Fire. Contoured alloy plates.",12000,6000,4,armor
+3,Cloth (TL 7),"Protection +5, TL 7. Heavy-duty ballistic coverall.",250,125,10,armor
+4,Cloth (TL 10),"Protection +8, TL 10. Heavy-duty ballistic coverall.",500,250,5,armor
+5,Cloth (TL 12),"Protection +4, TL 12. Light enough to be worn under other armor (stacks).",750,375,2,armor
+6,Diplo Vest,"Protection +3, TL 10. Completely concealable under a shirt.",250,125,0.1,armor
+7,Flak Jacket (TL 7),"Protection +3, TL 7. Heavy sleeveless vest.",100,50,8,armor
+8,Flak Jacket (TL 8),"Protection +5, TL 8. Heavy sleeveless vest.",300,150,6,armor
+9,Flak Shell,"Protection +8, TL 9. DM-1 to physical checks. Heavy breastplate.",1000,500,8,armor
+10,Jack,"Protection +1, TL 1. Tough leather or synthetic hide.",50,25,1,armor
+11,Mesh,"Protection +2, TL 6. Leather reinforced with metal mesh.",150,75,2,armor
+12,Poly Carapace,"Protection +10, TL 10. DM-1 to physical checks. Includes helmet.",10000,5000,2,armor
+13,Poly Carapace (Lightweight),"Protection +12, TL 11. Less bulky, does not restrict movement.",15000,7500,2,armor
+14,Poly Carapace (Advanced),"Protection +16, TL 13. Advanced plates, does not restrict movement.",35000,17500,2,armor
+15,Post-Apocalyptic Armour,"Protection +4, TL 6. Scavenged plates and rubber.",150,75,3,armor
+16,Protec Suit,"Protection +4, TL 9. Looks like a business suit. Socially acceptable.",500,250,1,armor
+17,Tactical Riot Armour,"Protection +4, TL 7. Grants Boon to Intimidate attempts.",600,300,6,armor
+18,Breastplate,"Protection +3, TL 1. Halved vs higher TL guns.",200,100,5,armor
+19,Full Plate,"Protection +6, TL 2. DM-2 to physical checks. Halved vs higher TL guns.",1000,500,20,armor
+20,Half-Plate,"Protection +5, TL 2. Halved vs higher TL guns.",800,400,12,armor
+21,Mail Hauberk,"Protection +4, TL 2. Halved vs higher TL guns.",500,250,8,armor
+22,Radio Transceiver (TL 5 Manpack),Range 5 km. Backpack unit.,225,112,20,electronics
+23,Radio Transceiver (TL 5 Vehicle),Range 50 km. Heavy vehicle mount.,750,375,70,electronics
+24,Radio Transceiver (TL 5 Base),Range 500 km. Orbital range. Very heavy.,1500,750,150,electronics
+25,Radio Transceiver (TL 5 Global),"Range 5,000 km. Installation size.",15000,7500,300,electronics
+26,Radio Transceiver (TL 8),Range 50 km. Handheld.,75,37,0.1,electronics
+27,Radio Transceiver (TL 9),Range 500 km. Orbital range.,500,250,0.1,electronics
+28,Radio Transceiver (TL 9 Long Range),"Range 2,500 km. Includes Computer/0.",5000,2500,0.1,electronics
+29,Radio Transceiver (TL 10),Range 500 km. Orbital range. Includes Computer/0.,250,125,0.1,electronics
+30,Radio Transceiver (TL 12),"Range 10,000 km. System-wide range. Includes Computer/0.",1000,500,1,electronics
+31,Radio Transceiver (TL 13),"Range 1,000 km. Includes Computer/1.",250,125,0.1,electronics
+32,Radio Transceiver (TL 14),"Range 3,000 km. Includes Computer/1.",500,250,0.1,electronics
+33,Laser Transceiver (TL 9),Range 500 km. Line of sight only. Includes Computer/0.,2500,1250,1.5,electronics
+34,Laser Transceiver (TL 11),Range 500 km. Line of sight only. Includes Computer/0.,1500,750,0.5,electronics
+35,Laser Transceiver (TL 13),Range 500 km. Line of sight only. Includes Computer/1.,500,250,0.1,electronics
+36,Mobile Comm (TL 6),Audio only. Requires local network/towers.,50,25,1,electronics
+37,Mobile Comm (TL 8),Audio and Visual. Requires local network. Includes Computer/0.,150,75,0.5,electronics
+38,Mobile Comm (TL 10),Holographic/Cybernetic. Requires local network. Includes Computer/1.,500,250,0.1,electronics
+39,Computer (TL 7),Processing 0. Basic portable computer.,500,250,5,electronics
+40,Computer (TL 8),Processing 1. Can act as Comms/Transceiver.,250,125,2,electronics
+41,Computer (TL 9),Processing 1. Lightweight. Can act as Comms/Transceiver.,100,50,1,electronics
+42,Computer (TL 10),Processing 2. Can act as Comms/Transceiver.,500,250,0.5,electronics
+43,Computer (TL 11),Processing 2. Advanced materials. Can act as Comms/Transceiver.,300,150,0.5,electronics
+44,Computer (TL 12),Processing 3. Can act as Comms/Transceiver.,1000,500,0.5,electronics
+45,Computer (TL 13),Processing 4. Can act as Comms/Transceiver.,1500,750,0.5,electronics
+46,Computer (TL 14),Processing 5. Can act as Comms/Transceiver.,5000,2500,0.5,electronics
+47,Data Display/Recorder,"TL 13. Heads-up display, links to any system/sensor.",5000,2500,0.1,electronics
+48,Data Wafer,TL 10. Memory diamond storage card.,5,0,0.01,electronics
+49,Navigation Computer (Specialized),TL 9. Processing 1 (Navigation 3). Specialized for one task.,150,75,1,electronics
+50,Interface 0,TL 7. Bandwidth 0. Basic data display.,0,0,0,software
+51,Intelligent Interface,"TL 11. Bandwidth 1. AI voice control, required for Expert soft.",100,50,0,software
+52,Security 0,TL 8. Bandwidth 0. Difficulty 8+ to bypass.,0,0,0,software
+53,Security 1,TL 10. Bandwidth 1. Difficulty 10+ to bypass.,200,100,0,software
+54,Security 2,TL 11. Bandwidth 2. Difficulty 12+ to bypass.,1000,500,0,software
+55,Security 3,TL 12. Bandwidth 3. Difficulty 14+ to bypass.,20000,10000,0,software
+56,Intrusion 1,TL 10. Bandwidth 1. Aids hacking attempts.,1000,500,0,software
+57,Intrusion 2,TL 11. Bandwidth 2. Aids hacking attempts.,10000,5000,0,software
+58,Intrusion 3,TL 13. Bandwidth 3. Aids hacking attempts.,100000,50000,0,software
+59,Intrusion 4,TL 15. Bandwidth 4. Military grade hacking suite.,1000000,500000,0,software
+60,Expert 1,TL 11. Bandwidth 1. Mimics a skill at level 0.,1000,500,0,software
+61,Expert 2,TL 12. Bandwidth 2. Mimics a skill at level 1.,10000,5000,0,software
+62,Expert 3,TL 13. Bandwidth 3. Mimics a skill at level 2.,100000,50000,0,software
+63,Translator 0,TL 9. Bandwidth 0. Near-real-time translation.,50,25,0,software
+64,Translator 1,"TL 10. Bandwidth 1. Real-time, understands nuance.",500,250,0,software
+65,Database,TL 7. Large store of information on one topic.,1000,500,0,software
+66,Agent 0,TL 11. Bandwidth 0. Automated tasks with Computers-0 skill.,500,250,0,software
+67,Agent 1,TL 12. Bandwidth 1. Automated tasks with Computers-1 skill.,2000,1000,0,software
+68,Agent 2,TL 13. Bandwidth 2. Automated tasks with Computers-2 skill.,100000,50000,0,software
+69,Agent 3,TL 14. Bandwidth 3. Automated tasks with Computers-3 skill.,250000,125000,0,software
+70,Intellect 1,"TL 12. Bandwidth 1. Improved Agent, can use Expert skills.",2000,1000,0,software
+71,Intellect 2,"TL 13. Bandwidth 2. Improved Agent, can use Expert skills.",50000,25000,0,software
+72,Intellect 3,TL 14. Bandwidth 3. Advanced AI.,1000000,500000,0,software
+73,Cryoberth,TL 10. Rapid-freezing life support. 1 week internal power.,50000,25000,200,medical
+74,Medikit (TL 8),TL 8. Basic diagnostics and drugs.,1000,500,1,medical
+75,Medikit (TL 10),TL 10. DM+1 to First Aid Medic checks.,1500,750,1,medical
+76,Medikit (TL 12),TL 12. DM+2 to First Aid Medic checks.,5000,2500,1,medical
+77,Medikit (TL 14),TL 14. DM+3 to First Aid Medic checks. Negligible weight.,10000,5000,0,medical
+78,Anagathics,TL 15. Halts aging. Illegal/Controlled on many worlds. 1 dose/month.,20000,10000,0,drug
+79,Anti-rad,TL 8. Absorbs 100 rads. Must be taken within 10 mins of exposure.,1000,500,0,drug
+80,Combat Drugs,"TL 10. DM+4 Initiative, +1 Reaction, Damage -2. Fatigues user.",1000,500,0,drug
+81,Fast Drug,TL 10. Hibernation (60:1 time ratio). Preserves life support.,200,100,0,drug
+82,Medicinal Drugs (Generic),TL 5. Antibiotics/Antitoxins. Requires Medic skill.,100,50,0,drug
+83,Metabolic Accelerator,"TL 10. DM+8 Initiative, +2 Reactions. 2d6 Dmg + Fatigue after use.",500,250,0,drug
+84,Panaceas,TL 8. Wide-spectrum cure. Treat disease/infection as Medic-0.,200,100,0,drug
+85,Slow Drug,TL 11. 30x healing rate. Fatal if used outside medical facility.,500,250,0,drug
+86,Stims,TL 8. Removes Fatigue. Causes 1 dmg (cumulative if abused).,50,25,0,drug
+87,Binoculars (TL 3),TL 3. Magnification.,75,37,1,sensor
+88,Binoculars (TL 8),TL 8. Enhanced optics.,750,375,1,sensor
+89,Binoculars (TL 12),TL 12. Advanced optical magnification.,3500,1750,1,sensor
+90,Bioscanner,"TL 15. Detects life signs, health, and biological data.",350000,175000,3.5,sensor
+91,Densitometer,TL 14. Measures density and composition of materials.,20000,10000,5,sensor
+92,EM Probe,TL 10. Detects electromagnetic emissions.,1000,500,1,sensor
+93,Geiger Counter,TL 5. Detects radiation.,250,125,2,sensor
+94,IR Goggles (TL 6),TL 6. Infrared vision. Negates darkness penalties.,500,250,0.1,sensor
+95,Light Intensifier Goggles (TL 7),TL 7. Low light vision. Negates darkness penalties.,500,250,1,sensor
+96,Light Intensifier Goggles (TL 9),TL 9. Enhanced low light vision. Negates darkness penalties.,1250,625,0.1,sensor
+97,Neural Activity Scanner (NAS),TL 15. Scans brain activity and thought patterns.,35000,17500,10,sensor
+98,Artificial Gill,TL 8. Allows breathing underwater for extended periods.,4000,2000,4,survival_gear
+99,Environment Suit,TL 8. Basic sealed suit for hostile environments (not vacc-rated).,500,250,1,survival_gear
+100,Grav Belt,TL 12. Allows controlled flight/hovering. Personal gravitic unit.,100000,50000,6,survival_gear
+101,Habitat Module (TL 8),"TL 8. Collapsible shelter, deploys into small dwelling.",10000,5000,1000,survival_gear
+102,Habitat Module (TL 10),"TL 10. Lighter, more advanced collapsible shelter.",20000,10000,500,survival_gear
+103,Filter Mask (TL 7),TL 7. Protects against dust and light airborne contaminants.,100,50,0.1,survival_gear
+104,Breather Mask (TL 8),TL 8. Protects against toxins and most gasses.,150,75,0.1,survival_gear
+105,Breather Mask (TL 10),TL 10. Advanced protection against toxins and bioweapons.,2000,1000,0.1,survival_gear
+106,Portable Fusion Generator,TL 10. Compact power source.,500000,250000,20,survival_gear
+107,Rescue Bubble,TL 9. Emergency personal shelter/life support.,600,300,2,survival_gear
+108,Respirator (TL 6),TL 6. Basic air filter for particulate matter.,100,50,0.1,survival_gear
+109,Respirator (TL 10),"TL 10. High-efficiency air filter, sealed system.",2000,1000,0.1,survival_gear
+110,Tent (TL 3),TL 3. Basic fabric tent.,200,100,6,survival_gear
+111,Tent (TL 7),TL 7. Lightweight and durable tent.,2000,1000,5,survival_gear
+112,Electronics Toolkit,TL 7. For Electronics skill checks.,2000,1000,2,toolkit
+113,Engineering Toolkit,TL 12. For Engineering skill checks (starship systems).,4000,2000,12,toolkit
+114,Forensics Toolkit,TL 8. For Forensics skill checks (crime scene investigation).,2000,1000,12,toolkit
+115,Mechanical Toolkit,"TL 5. For Mechanical skill checks (repairs, assembly).",1000,500,12,toolkit
+116,Scientific Toolkit,"TL 5. For Science skill checks (lab work, analysis).",2000,1000,8,toolkit
+117,Surveying Toolkit,"TL 6. For Survey skill checks (terrain, resources).",1000,500,12,toolkit
+118,Blade,TL 2. Damage 2D. Generic melee bladed weapon.,100,50,2,melee_weapon
+119,Broadsword,TL 2. Damage 4D. Bulky.,500,250,8,melee_weapon
+120,Club,TL 1. Damage 2D.,50,25,3,melee_weapon
+121,Cutlass,TL 2. Damage 3D.,200,100,4,melee_weapon
+122,Dagger,TL 1. Damage 1D+2.,10,5,1,melee_weapon
+123,Improvised Weapon,Damage 2D-2. Weight varies by object.,1,0,1,melee_weapon
+124,Rapier,TL 3. Damage 2D.,200,100,2,melee_weapon
+125,Shield,TL 1. Damage 1D. Provides cover/parry in melee.,150,75,6,melee_weapon
+126,Staff,TL 1. Damage 2D.,20,10,3,melee_weapon
+127,Stunstick,TL 8. Damage 2D. Non-lethal stun effect.,300,150,1,melee_weapon
+128,Unarmed,Damage 1D. No weapon.,0,0,0,melee_weapon
+129,Antique Pistol,TL 3. Range 5m. Damage 2D-3.,100,50,1,firearm_pistol
+130,Autopistol,TL 6. Range 10m. Damage 3D-3.,200,100,1,firearm_pistol
+131,Body Pistol,TL 8. Range 5m. Damage 2D. Easily concealed.,500,250,0.1,firearm_pistol
+132,Gauss Pistol,"TL 13. Range 20m. Damage 3D. AP 3, Auto 2.",500,250,1,firearm_pistol
+133,Revolver,TL 5. Range 10m. Damage 3D-3.,150,75,1,firearm_pistol
+134,Snub Pistol,TL 8. Range 5m. Damage 3D-3. Zero-G compatible.,150,75,0.1,firearm_pistol
+135,Accelerator Rifle,TL 9. Range 250m. Damage 3D. Zero-G compatible.,900,450,2,firearm_rifle
+136,Advanced Combat Rifle,"TL 10. Range 450m. Damage 3D. Auto 3, Scope.",1000,500,3,firearm_rifle
+137,40mm Grenade,Ammunition for grenade launchers. Damage As Grenade.,100,50,0.5,ammo_grenade
+138,Antique Rifle,TL 3. Range 25m. Damage 3D-3.,150,75,6,firearm_rifle
+139,Assault Rifle,TL 7. Range 200m. Damage 3D. Auto 2.,500,250,4,firearm_rifle
+140,Autorifle,TL 6. Range 300m. Damage 3D. Auto 2.,750,375,5,firearm_rifle
+141,Gauss Rifle,"TL 12. Range 600m. Damage 4D. AP 5, Auto 3, Scope.",1500,750,4,firearm_rifle
+142,Rifle,TL 5. Range 250m. Damage 3D.,200,100,5,firearm_rifle
+143,Shotgun,TL 4. Range 50m. Damage 4D. Bulky.,200,100,4,firearm_rifle
+144,Submachine Gun,TL 6. Range 25m. Damage 3D. Auto 3.,400,200,3,firearm_smg
+145,Laser Pistol (TL 9),TL 9. Range 20m. Damage 3D. Zero-G compatible.,2000,1000,3,energy_weapon_pistol
+146,Laser Pistol (TL 11),TL 11. Range 30m. Damage 3D+3. Zero-G compatible.,3000,1500,2,energy_weapon_pistol
+147,Stunner (TL 8),"TL 8. Range 5m. Damage 2D. Stun, Zero-G compatible.",500,250,0.5,energy_weapon_pistol
+148,Stunner (TL 10),"TL 10. Range 5m. Damage 2D+3. Stun, Zero-G compatible.",750,375,0.5,energy_weapon_pistol
+149,Stunner (TL 12),"TL 12. Range 10m. Damage 3D. Stun, Zero-G compatible.",1000,500,0.5,energy_weapon_pistol
+150,Laser Carbine (TL 9),TL 9. Range 150m. Damage 4D. Zero-G compatible.,2500,1250,4,energy_weapon_rifle
+151,Laser Carbine (TL 11),TL 11. Range 200m. Damage 4D+3. Zero-G compatible.,4000,2000,3,energy_weapon_rifle
+152,Laser Rifle (TL 9),TL 9. Range 200m. Damage 5D. Zero-G compatible.,3500,1750,8,energy_weapon_rifle
+153,Laser Rifle (TL 11),TL 11. Range 400m. Damage 5D+3. Zero-G compatible.,8000,4000,5,energy_weapon_rifle
+154,Laser Sniper Rifle (TL 12),"TL 12. Range 600m. Damage 5D+3. Scope, Zero-G compatible.",9000,4500,6,energy_weapon_rifle
+155,Plasma Rifle (TL 16),TL 16. Range 300m. Damage 6D. Unlimited ammunition capacity.,100000,50000,6,energy_weapon_rifle
+156,Aerosol Grenade,TL 9. Range 20. Releases a gas/aerosol. Blast 9.,15,7,0.5,grenade
+157,Frag Grenade,TL 6. Range 20. Damage 5D. Blast 9.,30,15,0.5,grenade
+158,Smoke Grenade,TL 6. Range 20. Creates a smoke cloud. Blast 9.,15,7,0.5,grenade
+159,Stun Grenade,"TL 7. Range 20. Damage 3D (Stun). Blast 9, Stun effect.",30,15,0.5,grenade
+160,Fusion Gun (FGMP 14),"TL 14. Range 450m. Damage 2DD (Mass Driver). Radiation, Very Bulky.",100000,50000,12,heavy_weapon
+161,Fusion Gun (FGMP 15),"TL 15. Range 450m. Damage 2DD (Mass Driver). Radiation, Bulky.",400000,200000,12,heavy_weapon
+162,Fusion Gun (FGMP 16),TL 16. Range 450m. Damage 2DD (Mass Driver). Radiation.,500000,250000,15,heavy_weapon
+163,Grenade Launcher,TL 7. Range 100m. Damage As grenade. Bulky.,400,200,6,heavy_weapon
+164,Machinegun,TL 6. Range 500m. Damage 3D. Auto 4.,1500,750,12,heavy_weapon
+165,Plasma Gun (PGMP 12),TL 12. Range 250m. Damage 1DD (Mass Driver). Very Bulky.,20000,10000,10,heavy_weapon
+166,Plasma Gun (PGMP 13),TL 13. Range 450m. Damage 1DD (Mass Driver). Bulky.,65000,32500,10,heavy_weapon
+167,Plasma Gun (PGMP 14),TL 14. Range 450m. Damage 1DD (Mass Driver).,100000,50000,10,heavy_weapon
+168,RAM Grenade Launcher,"TL 8. Range 250m. Damage As grenade. Auto 3, Bulky.",800,400,2,heavy_weapon
+169,Rocket Launcher (TL 6),TL 6. Range 120m. Damage 4D. Blast 6.,2000,1000,8,heavy_weapon
+170,Rocket Launcher (TL 7),"TL 7. Range 150m. Damage 4D+3. Blast 6, Smart.",2000,1000,8,heavy_weapon
+171,Rocket Launcher (TL 8),"TL 8. Range 200m. Damage 5D. Blast 6, Scope, Smart.",2000,1000,8,heavy_weapon
+172,Rocket Launcher (TL 9),"TL 9. Range 250m. Damage 5D+6. Blast 6, Scope, Smart.",2000,1000,8,heavy_weapon

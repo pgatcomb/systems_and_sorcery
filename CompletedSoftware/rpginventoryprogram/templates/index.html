@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPG Inventory Manager</title>
+    <style>
+        body {
+            font-family: 'Courier New', monospace;
+            color: white;
+            background-color: #001122;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .window {
+            background-color: #004488;
+            border: 2px solid white;
+            padding: 15px;
+            margin-bottom: 20px;
+            position: relative;
+        }
+        .window::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background-color: white;
+        }
+        .banner {
+            background-color: #ff6600;
+            color: white;
+            padding: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .error {
+            background-color: #ff0000;
+        }
+        .warning {
+            background-color: #ff8800;
+        }
+        form {
+            display: inline;
+        }
+        button {
+            background-color: #0066aa;
+            color: white;
+            border: 1px solid white;
+            padding: 5px 10px;
+            cursor: pointer;
+            font-family: inherit;
+        }
+        button:hover {
+            background-color: #0077cc;
+        }
+        input[type="text"] {
+            background-color: #002244;
+            color: white;
+            border: 1px solid white;
+            padding: 5px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 5px;
+            text-align: left;
+        }
+        th {
+            border-bottom: 1px solid white;
+        }
+        .text-right {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        {% if banner %}
+            <div class="banner {{ 'error' if '404' in banner or '409' in banner or '400' in banner else '' }} {{ 'warning' if 'Warning' in banner else '' }}">
+                {{ banner.replace('%20', ' ') }}
+            </div>
+        {% endif %}
+
+        {% if not logged_in %}
+            <div class="window">
+                <h1>Login to RPG Inventory Manager</h1>
+                <form action="/login" method="post">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+        {% else %}
+            <div class="window">
+                <h1>Welcome, {{ inventory.player }}!</h1>
+                <p>Currency: {{ inventory.currency }}</p>
+                <p>Total Weight: {{ inventory.total_weight }} / {{ inventory.encumbrance_limit }}</p>
+                {% if exceeded %}
+                    <div class="banner warning">Encumbrance limit exceeded!</div>
+                {% endif %}
+                <form action="/logout" method="post">
+                    <button type="submit">Logout</button>
+                </form>
+            </div>
+
+            <div class="window">
+                <h2>Your Inventory</h2>
+                {% if inventory['items'] %}
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Qty</th>
+                                <th>Weight per</th>
+                                <th>Total Weight</th>
+                                <th>Buy Price</th>
+                                <th>Sell Price</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for item in inventory['items'] %}
+                                <tr>
+                                    <td>{{ item.name }}</td>
+                                    <td>{{ item.qty }}</td>
+                                    <td>{{ item.weight }}</td>
+                                    <td>{{ "%.1f"|format(item.weight * item.qty) }}</td>
+                                    <td>{{ item.price }}</td>
+                                    <td>{{ item.sell_price }}</td>
+                                    <td>
+                                        <form action="/inventory/use" method="post" style="display:inline;">
+                                            <input type="hidden" name="id" value="{{ item.id }}">
+                                            <button type="submit">Use</button>
+                                        </form>
+                                        <form action="/store/sell" method="post" style="display:inline;">
+                                            <input type="hidden" name="id" value="{{ item.id }}">
+                                            <button type="submit">Sell</button>
+                                        </form>
+                                        <form action="/inventory/drop" method="post" style="display:inline;">
+                                            <input type="hidden" name="id" value="{{ item.id }}">
+                                            <button type="submit">Drop</button>
+                                        </form>
+                                    </td>
+                                </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                {% else %}
+                    <p>No items in inventory.</p>
+                {% endif %}
+            </div>
+
+            <div class="window">
+                <h2>Store</h2>
+                {% set current_sort = request.args.get('sort_by') %}
+                {% set current_order = request.args.get('order', 'asc') %}
+                {% if store_items %}
+                    <table>
+                        <thead>
+                            <tr>
+                                <th><a href="
+{% if current_sort == 'name' %}
+    {% if current_order == 'asc' %}
+{{ url_for('index', sort_by='name', order='desc') }}
+    {% else %}
+{{ url_for('index') }}
+    {% endif %}
+{% else %}
+{{ url_for('index', sort_by='name', order='asc') }}
+{% endif %}
+">Name</a></th>
+                                <th><a href="
+{% if current_sort == 'description' %}
+    {% if current_order == 'asc' %}
+{{ url_for('index', sort_by='description', order='desc') }}
+    {% else %}
+{{ url_for('index') }}
+    {% endif %}
+{% else %}
+{{ url_for('index', sort_by='description', order='asc') }}
+{% endif %}
+">Description</a></th>
+                                <th><a href="
+{% if current_sort == 'price' %}
+    {% if current_order == 'asc' %}
+{{ url_for('index', sort_by='price', order='desc') }}
+    {% else %}
+{{ url_for('index') }}
+    {% endif %}
+{% else %}
+{{ url_for('index', sort_by='price', order='asc') }}
+{% endif %}
+">Price</a></th>
+                                <th>Sell Price</th>
+                                <th>Weight</th>
+                                <th><a href="
+{% if current_sort == 'category' %}
+    {% if current_order == 'asc' %}
+{{ url_for('index', sort_by='category', order='desc') }}
+    {% else %}
+{{ url_for('index') }}
+    {% endif %}
+{% else %}
+{{ url_for('index', sort_by='category', order='asc') }}
+{% endif %}
+">Category</a></th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for item in store_items %}
+                                <tr>
+                                    <td>{{ item.name }}</td>
+                                    <td>{{ item.description or '' }}</td>
+                                    <td>{{ item.price }}</td>
+                                    <td>{{ item.sell_price }}</td>
+                                    <td>{{ item.weight }}</td>
+                                    <td>{{ item.category }}</td>
+                                    <td>
+                                        <form action="/store/buy" method="post">
+                                            <input type="hidden" name="id" value="{{ item.id }}">
+                                            <button type="submit">Buy</button>
+                                        </form>
+                                    </td>
+                                </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                    <details>
+                        <summary>Add New Item</summary>
+                        <form action="/store/add" method="post">
+                            <label for="name">Name:</label>
+                            <input type="text" name="name" required><br>
+                            <label for="description">Description:</label>
+                            <input type="text" name="description"><br>
+                            <label for="price">Price:</label>
+                            <input type="number" name="price" min="0" required><br>
+                            <label for="sell_price">Sell Price:</label>
+                            <input type="number" name="sell_price" min="0"><br>
+                            <label for="weight">Weight:</label>
+                            <input type="number" name="weight" step="0.01" min="0" required><br>
+                            <label for="category">Category:</label>
+                            <input type="text" name="category"><br>
+                            <button type="submit">Add Item</button>
+                        </form>
+                    </details>
+                {% else %}
+                    <p>No items in store.</p>
+                {% endif %}
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>

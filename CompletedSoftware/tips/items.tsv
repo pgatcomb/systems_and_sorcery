@@ -1,0 +1,211 @@
+item_name	description	category	cost	rarity	tags	system	metadata
+Standard Ammo	Standard Ammunition (20 Rounds)	weapon	10	0	ammunition	SWN Revised	enc:1#;uses:20
+Missile Ammo	Used for rocket launchers and Hydra Arrays	weapon	50	1	ammunition	SWN Revised	enc:2;uses:1
+Power Cell, Type A	Ammunition for energy small arms	weapon	10	1	ammunition	SWN Revised	enc:1#;uses:1
+Power Cell, Type B	Ammunition for large energy weapons	weapon	100	2	ammunition	SWN Revised	enc:1#;uses:1
+Shield	Primitive protection (AC 13 or +1 bonus)	armor	10	0	primitive	SWN Revised	ac:13/+1 bonus;enc:1;tl0
+Leather jack	Quilted armor or thick hides (AC 13)	armor	10	0	primitive	SWN Revised	ac:13;enc:1;tl0
+Cuirass	Half-plate or layered mail (AC 15)	armor	50	3	primitive	SWN Revised	ac:15;enc:1;tl:1
+Full plate	Heavy layered mail or plate (AC 17)	armor	100	3	primitive	SWN Revised	ac:17;enc:2,tl:1
+Warpaint	Scrap-built street harness (AC 12)	armor	300	1	street	SWN Revised	ac:12;enc:0;tl:4
+Armored Undersuit	Discrete subcutaneous protection (AC 13)	armor	600	2	street	SWN Revised	ac:13;enc:0;tl:4
+Secure Clothing	Reinforced everyday wear (AC 13)	armor	300	2	street	SWN Revised	ac:13;enc:1;tl:4
+Armored Vacc Suit	Sealed suit for vacuum (AC 13)	armor	400	3	street	SWN Revised	ac:13;enc:2;tl:4
+Deflector Array	Advanced kinetic energy dispersal (AC 18)	armor	30000	5	street	SWN Revised	ac:18;enc:0;tl:5
+Force Pavis	TL5 deployable force shield (AC 15 or +1 bonus)	armor	10000	4	combat	SWN Revised	ac:15/+1 bonus;enc:1;tl:5
+Security Armor	Standard police/security plating (AC 14)	armor	700	2	combat	SWN Revised	ac:14;enc:1;tl:4
+Woven Body Armor	TL3 layered protection (AC 15)	armor	400	2	combat	SWN Revised	ac:15;enc:2;tl:3
+Combat Field Uniform	Standard TL4 military armor (AC 16)	armor	1000	4	combat	SWN Revised	ac:16;enc:1;tl:4
+Icarus Harness	CFU with gravity damper (AC 16)	armor	8000	4	combat	SWN Revised	ac:16;enc:1;tl:4
+Vestimentum	TL5 ceremonial force-field armor (AC 18)	armor	15000	4	powered	SWN Revised	ac:18;enc:0;tl:5
+Assault Suit	Heavy TL4 powered armor (AC 18)	armor	10000	4	powered	SWN Revised	ac:18;enc:2;tl:4
+Storm Armor	TL5 advanced powered armor (AC 19)	armor	20000	5	powered	SWN Revised	ac:19;enc:2;tl:5
+Field Emitter Panoply	Full-body force field emitter (AC 20)	armor	40000	6	powered	SWN Revised	ac:20;enc:1;tl:5
+Primitive Bow	Low-tech ranged weapon	weapon	15	0	ranged	SWN Revised	dmg:1d6;range:50/75;uses:1;attr:dex;enc:2;tl:1
+Advanced Bow	High-tension composite bow	weapon	50	1	ranged	SWN Revised	dmg:1d6;range:100/150;uses:1;attr:dex;enc:2;tl:3
+Conversion Bow	TL4 energy-assisted bow	weapon	500	4	ranged	SWN Revised	dmg:1d8;range:150/300;uses:1;attr:dex;enc:2;tl:4
+Grenade	Hand-thrown explosive	weapon	25	2	ranged	SWN Revised	dmg:2d6;range:10/30;uses:1;attr:dex;enc:1;tl:3
+Crude Pistol	Single-shot primitive firearm	weapon	20	1	ranged	SWN Revised	dmg:1d6;range:5/15;uses:1;reload:2;attr:dex;enc:1;tl:2
+Musket	Heavy primitive firearm	weapon	30	1	ranged	SWN Revised	dmg:1d12;range:25/50;uses:1;reload:2;attr:dex;enc:2;tl:2
+Revolver	Standard TL2-3 sidearm	weapon	50	1	ranged	SWN Revised	dmg:1d8;range:30/100;uses:6;attr:dex;enc:1;tl:2
+Rifle	Standard TL2-3 long gun	weapon	75	1	ranged	SWN Revised	dmg:1d10+2;range:200/400;uses:6;attr:dex;enc:2;tl:2
+Shotgun	Close-range primitive scattergun	weapon	50	1	ranged	SWN Revised	dmg:3d4;range:10/30;uses:2;attr:dex;enc:2;tl:2
+Semi-Auto Pistol	Standard TL3 sidearm	weapon	75	1	ranged	SWN Revised	dmg:1d6+1;range:30/100;uses:12;attr:dex;enc:1;tl:3
+Submachine Gun	Rapid-fire TL3 weapon (Burst)	weapon	200	2	ranged	SWN Revised	dmg:1d8;range:30/100;uses:20;burst;attr:dex;enc:1;tl:3
+Combat Rifle	High-power TL3 military rifle (Burst)	weapon	300	2	ranged	SWN Revised	dmg:1d12;range:100/300;uses:30;burst;attr:dex;enc:2;tl:3
+Combat Shotgun	Rapid-fire scattergun (Burst)	weapon	300	3	ranged	SWN Revised	dmg:3d4;range:10/30;uses:12;burst;attr:dex;enc:2;tl:3
+Sniper Rifle	Precision long-range rifle	weapon	400	2	ranged	SWN Revised	dmg:2d8;range:1000/2000;uses:1;attr:dex;enc:2;tl:3
+Void Carbine	Recoilless vacuum weapon	weapon	400	4	ranged	SWN Revised	dmg:2d6;range:100/300;uses:10;attr:dex;enc:2;tl:4
+Mag Pistol	Magnetic acceleration sidearm	weapon	400	3	ranged	SWN Revised	dmg:2d6+2;range:100/300;uses:6;attr:dex;enc:1;tl:4
+Mag Rifle	Magnetic acceleration long gun	weapon	500	4	ranged	SWN Revised	dmg:2d8+2;range:300/600;uses:10;attr:dex;enc:2;tl:4
+Spike Thrower	Rapid-fire magnetic scattergun (Burst)	weapon	600	4	ranged	SWN Revised	dmg:3d8;range:20/40;uses:15;burst;attr:dex;enc:2;tl:4
+Laser Pistol	Standard TL4 energy sidearm	weapon	200	4	ranged	SWN Revised	dmg:1d6;range:100/300;uses:10;attr:dex;enc:1;tl:4
+Laser Rifle	Standard TL4 energy long gun (Burst)	weapon	300	4	ranged	SWN Revised	dmg:1d10;range:300/500;uses:20;burst;attr:dex;enc:2;tl:4
+Thermal Pistol	High-damage plasma sidearm	weapon	300	4	ranged	SWN Revised	dmg:2d6;range:25/50;uses:5;attr:dex;enc:1;tl:4
+Plasma Projector	Heavy plasma weapon	weapon	400	5	ranged	SWN Revised	dmg:2d8;range:50/100;uses:6;attr:dex;enc:2;tl:4
+Shear Rifle	TL5 gravitic shear weapon (Burst)	weapon	600	5	ranged	SWN Revised	dmg:2d8;range:100/300;uses:10;burst;attr:dex;enc:2;tl:5
+Thunder Gun	TL5 sonic/concussive weapon	weapon	1000	5	ranged	SWN Revised	dmg:2d10;range:100/300;uses:6;attr:dex;enc:2;tl:5
+Distortion Cannon	TL5 spatial distortion weapon	weapon	1250	5	ranged	SWN Revised	dmg:2d12;range:100/300;uses:6;attr:dex;enc:2;tl:5
+Small Primitive Weapon	Knife or club	weapon	0	0	melee	SWN Revised	dmg:1d4;shock:1/AC15;attr:str/dex;enc:1;tl:0
+Medium Primitive Weapon	Sword or mace	weapon	20	0	melee	SWN Revised	dmg:1d6+1;shock:2/AC13;attr:str/dex;enc:1;tl:0
+Large Primitive Weapon	Claymore or polearm	weapon	30	0	melee	SWN Revised	dmg:1d8+1;shock:2/AC15;attr:str;enc:2;tl:0
+Small Advanced Weapon	Monoblade knife	weapon	40	3	melee	SWN Revised	dmg:1d6;shock:1/AC15;attr:str/dex;enc:1;tl:4
+Medium Advanced Weapon	Monoblade sword	weapon	60	3	melee	SWN Revised	dmg:1d8+1;shock:2/AC13;attr:str/dex;enc:1;tl:4
+Large Advanced Weapon	Monoblade axe	weapon	80	4	melee	SWN Revised	dmg:1d10+1;shock:2/AC15;attr:str;enc:2;tl:4
+Stun Baton	Non-lethal law enforcement tool	weapon	50	1	melee	SWN Revised	dmg:1d8;shock:1/AC15;attr:str/dex;enc:1;tl:4
+Suit Ripper	Illegal tool for tearing vacc suits	weapon	75	1	melee	SWN Revised	dmg:1d6;attr:str/dex;enc:1;tl:4
+Heavy Machine Gun	Belt-fed suppressive weapon	weapon	5000	3	heavy weapon	SWN Revised	dmg:3d6;range:500/2000;uses:10;burst;attr:dex;enc:3;tl:3
+Rocket Launcher	Man-portable anti-armor launcher	weapon	4000	3	heavy weapon	SWN Revised	dmg:3d10;range:2000/4000;uses:1;attr:dex;enc:2;tl:3
+Demo Charge	Standard demolition explosive	weapon	250	3	heavy weapon	SWN Revised	dmg:3d10;range:20/40;uses:1;enc:1;tl:3
+Railgun	Man-portable heavy magnetic accelerator	weapon	8000	4	heavy weapon	SWN Revised	dmg:3d8;range:4000/8000;uses:20;burst;attr:dex;enc:*;tl:4
+Anti-Vehicle Laser	Focused heavy energy weapon	weapon	10000	4	heavy weapon	SWN Revised	dmg:3d10;range:2000/4000;uses:15;attr:dex;enc:*;tl:4
+Hydra Array	Multi-missile heavy launcher	weapon	20000	4	heavy weapon	SWN Revised	dmg:3d6;range:4000/8000;uses:10;burst;attr:dex;enc:*;tl:4
+Wheatcutter Belt	Anti-personnel explosive belt	weapon	10000	3	heavy weapon	SWN Revised	dmg:2d12;range:10/20;uses:5;attr:dex;enc:*;tl:4
+Vortex Cannon	Heavy gravitic shear weapon	weapon	75000	5	heavy weapon	SWN Revised	dmg:5d12;range:1000/2000;uses:5;attr:dex;enc:*;tl:5
+Atmofilter	Toxic gas face mask	utility	100	0		SWN Revised	enc:1;tl:4
+Backpack	Gear carrying device	utility	5	0		SWN Revised	enc:1/*;tl:0/4
+Binoculars	TL3 optical zoom device	utility	20	0		SWN Revised	enc:1;tl:3/4
+Climbing Harness	Gear for scaling surfaces	utility	50	0		SWN Revised	enc:1;tl:3
+Glowbug	Adhesive light source	utility	5	1		SWN Revised	enc:*;tl:3
+Grapnel Launcher	Tool for firing ropes/grapnels	utility	200	2		SWN Revised	enc:1;tl:3
+Grav Chute	Single-use descent damper	utility	300	4		SWN Revised	enc:1;tl:4/5
+Grav Harness	Flight-capable gravitic harness	utility	5000	5		SWN Revised	enc:3;tl:5
+Instapanel	Expandable rigid ceraplast sheet	utility	50	2		SWN Revised	enc:1#;tl:4
+Low-light Goggles	Night vision eyewear	utility	200	2		SWN Revised	enc:1;tl:3
+Navcomp	Terrestrial navigation computer	utility	500	2		SWN Revised	enc:1;tl:4
+Portabox	Deployable rigid airtight locker	utility	50	3		SWN Revised	enc:1;tl:4
+Pressure Tent	Sealed habitat for five	utility	100	3		SWN Revised	enc:4;tl:3
+Rations	One day of preserved food	consumable	5	0		SWN Revised	enc:1#;tl:1;uses:1
+Rope	20 meters of high-strength synthetic	utility	4	0		SWN Revised	enc:2/1;tl:0/4
+Survey Scanner	Atmospheric and chemical analyzer	utility	250	3		SWN Revised	enc:*;tl:4
+Survival Kit	Essential emergency gear bundle	utility	60	0		SWN Revised	enc:1;tl:4
+Telescoping Pole	Collapsible 3-meter baton	utility	10	0		SWN Revised	enc:1;tl:4
+Thermal Flare	Visual signal or light	utility	5	0		SWN Revised	enc:*;tl:4
+Trade Goods	Common barter commodities (1kg)	goods	50	0		SWN Revised	enc:*;tl:3
+Trade Metals	Precious metals for primitive worlds (1kg)	goods	10	0		SWN Revised	enc:1#;tl:4
+Vacc Fresher	Oxygen tank refilling tube	goods	400	3		SWN Revised	enc:1#;tl:4
+Vacc Skin	TL5 spray-on vacuum protection	armor	1000	5		SWN Revised	enc:1;tl:4
+Vacc Suit	Basic planetary vacuum suit	armor	100	3		SWN Revised	enc:1;tl:5
+Bezoar	General antitoxin pharmaceutical	consumable	200	1		SWN Revised	enc:2;tl:4
+Brainwave	TL5 psychic effort booster	v	1000	4		SWN Revised	enc:*;tl:4
+Hush	Powerful neurotranquilizer	consumable	200	3		SWN Revised	enc:*;tl:5
+Lift	Multi-day stimulant drug	consumable	50	1		SWN Revised	enc:*;tl:4
+Psych	Reckless combat stimulant	consumable	25	3		SWN Revised	enc:*;tl:4
+Pretech Cosmetic	TL5 health and beauty stim	consumable	1000	5		SWN Revised	enc:*;tl:4
+Reverie	Psychoactive memory-reliving dust	consumable	100	5		SWN Revised	enc:*;tl:5
+Squeal	Agony-inducing interrogation stim	consumable	300	4		SWN Revised	enc:*;tl:4
+Tsunami	High-power combat adrenaline	consumable	50	3		SWN Revised	enc:*;tl:4
+Bioscanner	Medical diagnostic tool	consumable	300	2		SWN Revised	enc:1;tl:4
+Lazarus Patch	Emergency stabilization patch	consumable	30	2		SWN Revised	enc:1#;tl:4
+Medkit	Comprehensive trauma care kit	utiltiy	100	1		SWN Revised	enc:2;tl:4
+Metatool	Wrist-mounted multi-repair tool	utility	200	1		SWN Revised	enc:1;tl:4
+Spare Parts	General technical repair units	consumable	50	0		SWN Revised	enc:1#;tl:4
+Tailored Antiallergens	Biotic adaptation dose	consumable	5	2		SWN Revised	enc:*;tl:4
+Toolkit	Specialized repair tools (Postech)	utility	300	5		SWN Revised	enc:3;tl:4
+Comm Server	Local encrypted comm grid base	utility	1000	2		SWN Revised	enc:3;tl:4
+Compad	Standard handheld comm device	utility	100	1		SWN Revised	enc:*;tl:4
+Field Radio	Shortwave terrestrial radio	utility	200	1		SWN Revised	enc:1;tl:4
+Translator Torc	Automated speech translator	utility	200	4		SWN Revised	enc:*;tl:4
+Black Slab	Illegal hacking-optimized computer	utility	10000	3		SWN Revised	enc:1;tl:4
+Data Phase Tap	Tool for non-invasive line tapping	utility	5000	3		SWN Revised	enc:1;tl:4
+Data Protocol	Regional data formatting manual	utility	1000	2		SWN Revised	enc:*;tl:4
+Dataslab	Standard folding handheld computer	utility	300	1		SWN Revised	enc:1;tl:4
+Line Shunt	Remote data intrusion disc	utility	100	3		SWN Revised	enc:*;tl:4
+Remote Link Unit	Wireless computer interface	utility	250	1		SWN Revised	enc:1;tl:4
+Storage Unit	High-capacity data case	utility	500	1		SWN Revised	enc:1;tl:5
+Tightbeam Link Unit	Line-of-sight laser comm	utility	1000	4		SWN Revised	enc:3;tl:4
+Biosculpt	DNA-level total reconstruction	utility	10000	4		SWN Revised	enc:1;tl:4
+Cyberclaws	Retractable monoblade implants	weapon	500	4	cyberwear	SWN Revised	enc:*;tl:4
+"Deep Echo" Radar	Torso-implanted penetrative radar	utility	7500	4	cyberwear	SWN Revised	enc:*;tl:4
+Direct Interface	Wireless hardware control link	utility	3000	4	cyberwear	SWN Revised	enc:*;tl:4
+"Gecko" Anchors	Wall-climbing limb implants	utility	10000	4	cyberwear	SWN Revised	enc:*;tl:4
+Inertial Shunt Nodes	Kinetic impact dispersal nodes	utility	5000	4	cyberwear	SWN Revised	enc:*;tl:4
+Biostatus Monitor	Internal medical status alerts	utility	1000	4	cyberwear	SWN Revised	enc:*;tl:4
+Integral Commlink	Grid-reliant subvocal transceiver	utility	500	4	cyberwear	SWN Revised	enc:*;tl:4
+"Masquerade" Identity	DNA/retina/fingerprint mimicry	utility	20000	4	cyberwear	SWN Revised	enc:*;tl:4
+Neural Overload Wiring	Hyper-fast action wiring	utility	30000	4	cyberwear	SWN Revised	enc:*;tl:4
+Panic Button	Emergency life-saving implant	utility	5000	4	cyberwear	SWN Revised	enc:*;tl:4
+Phosphor Tattoos	Programmable glowing tattoos	utility	100	4	cyberwear	SWN Revised	enc:*;tl:4
+Brainchip	Cloned cerebral psionic fuel	utility	10000	4	cyberwear	SWN Revised	enc:*;tl:4
+Antisomnix	Stimulant vs. sleep grenades	utility	100	3		SWN Revised	enc:0;tl:3
+Binder Satchel	Ultra-strong binding glue	utility	50	2		SWN Revised	enc:1;tl:2
+Burner Bag	High-heat matter disposal bag	utility	150	4		SWN Revised	enc:1;tl:4
+Comet Suit	Orbital drop ablation suit	utility	6000	4		SWN Revised	enc:2;tl:4
+Dandelion Chute	Stealth aerogel descent system	utility	5000	5		SWN Revised	enc:2;tl:5
+Grav Handles	Individual gravitic cargo lifters	utility	3000	4		SWN Revised	enc:1;tl:4
+Pulse Transmitter	Covert FTL text laser	utility	5000	5		SWN Revised	enc:1;tl:5
+Sleep Grenade	Non-lethal gas grenade	weapon	100	2		SWN Revised	enc:1;tl:4
+"Black Box" Core	Sealed tamper-proof fusion plant	utility	50000	4		SWN Revised	enc:2;tl:4
+Cargo Coffin	Portable cold sleep pod	utility	5000	4		SWN Revised	enc:0;tl:3
+Control Drugs	Highly addictive carnal drugs	consumable	50	3		SWN Revised	enc:0;tl:3
+Hibernation Drugs	Livestock/slave stasis drug	consumable	25	3		SWN Revised	enc:0;tl:3
+Ingestive Sealant	Biological leak-stopping stim	consumable	25	3		SWN Revised	enc:2;tl:4
+Nuclear Inhibition Field	Mobile nuke snuffer projector	utility	25000	4		SWN Revised	enc:2;tl:6
+Pocket Nuke	Illegal man-portable nuclear device	weapon	25000	6		SWN Revised	enc:2;tl:1
+"Rimworlder" Rifle	TL1-reproducible semiauto rifle	weapon	50	0		SWN Revised	enc:*;tl:5
+Auctoritas Stone	Psychological empathy-damping jewel	utility	50000	4		SWN Revised	enc:0;tl:5
+Breath of Life	Mandate-era medical psitech vapor	consumable	200000	4		SWN Revised	enc:2;tl:4
+Canopic Pet	Robot pet with a bottled mind	utility	30000	4		SWN Revised	enc:*;tl:5
+Eternal Sun	Golden ball of perpetual light	utility	300000	5		SWN Revised	enc:*;tl:5
+Fractal Gemstones	Ornate structure-forming jewels	utility	25000	5		SWN Revised	enc:2;tl:6
+Frozen Moment	Time-loop recurrence field generator	utility	50000	6		SWN Revised	enc:2;tl:6
+Gemini Automaton	Lethal pretech robotic duplicate	utility	100000	6		SWN Revised	enc:*;tl:6
+Iron Seeds	Material-synthesizing pretech nodes	utility	30000	6		SWN Revised	enc:*;tl:5
+A Life in Amber	Perfect sensory life-log lozenge	utility	60000	5		SWN Revised	enc:2;tl:6
+Midas Coffer	Matter-transmuting folding case	utility	120000	6		SWN Revised	enc:*;tl:6
+Neutron Diamonds	Gravitic-pull warping jewels	utility	300000	6		SWN Revised	enc:*;tl:4
+Nova Rubies	Light-trapping crimson gemstones	utility	100000	4		SWN Revised	enc:*;tl:5
+Omnivalent Fragrance	Emotion-influencing nanite fluid	utility	40000	5		SWN Revised	enc:0;tl:5
+Peach of Immortality	Gene-spliced anagathic fruit	consumable	20000000	6		SWN Revised	enc:0;tl:4
+Penitent Thorn	Habit-breaking neural needle	consumable	60000	4		SWN Revised	enc:*;tl:4
+Proust Dust	Memory-reliving psychoactive powder	consumable	10000	4		SWN Revised	enc:0;tl:4
+Music Box	Psychospecified auditory art	utility	40000	4		SWN Revised	enc:*;tl:4
+Solace Powder	Absolute sensory anesthetic	consumable	5000	4		SWN Revised	enc:2;tl:5
+Tears of God	Luminous blue psitech gemstones	goods	200000	5		SWN Revised	enc:2;tl:0
+Clothing	Commodity (1 ton)	goods	1000	0		SWN Revised	enc:2;tl:0
+Colonial Materials	Commodity (1 ton)	goods	2000	0		SWN Revised	enc:2;tl:0
+Colonial Supplies	Commodity (1 ton)	goods	1000	0		SWN Revised	enc:2;tl:1
+Raw Drugs	Commodity (1 ton)	goods	2000	1		SWN Revised	enc:2;tl:4
+Recreational Drugs	Commodity (1 ton)	goods	50000	4		SWN Revised	enc:2;tl:4
+Exotic Jewels	Commodity (1 ton)	goods	25000	4		SWN Revised	enc:2;tl:4
+Fine Liquor	Commodity (1 ton)	goods	10000	1		SWN Revised	enc:2;tl:4
+Fusion Plants	Commodity (1 ton)	goods	10000	4		SWN Revised	enc:2;tl:4
+Ghoul Immortality Tech	Maltech commodity (1 ton)	goods	400000	5		SWN Revised	enc:2;tl:4
+Basic Housewares	Commodity (1 ton)	goods	2000	0		SWN Revised	enc:2;tl:4
+Postech Housewares	Commodity (1 ton)	goods	5000	0		SWN Revised	enc:2;tl:4
+Pretech Housewares	Commodity (1 ton)	goods	50000	4		SWN Revised	enc:2;tl:4
+Common Livestock	Commodity (1 ton)	goods	2000	1		SWN Revised	enc:2;tl:4
+Gengineered Livestock	Commodity (1 ton)	goods	10000	4		SWN Revised	enc:2;tl:4
+Luxury Pets	Commodity (1 ton)	goods	25000	5		SWN Revised	enc:2;tl:4
+Postech Meds	Commodity (1 ton)	goods	25000	1		SWN Revised	enc:2;tl:4
+Pretech Meds	Commodity (1 ton)	goods	200000	4		SWN Revised	enc:2;tl:5
+Common Ingots	Commodity (1 ton)	goods	1000	0		SWN Revised	enc:2;tl:5
+Rare Alloys	Commodity (1 ton)	goods	5000	2		SWN Revised	enc:2;tl:0
+Metawheat	Commodity (1 ton)	goods	500	0		SWN Revised	enc:2;tl:0
+Native Artwork	Commodity (1 ton)	goods	10000	2		SWN Revised	enc:2;tl:0
+Basic Industry Parts	Commodity (1 ton)	goods	5000	1		SWN Revised	enc:2;tl:1
+Pretech Industry Parts	Commodity (1 ton)	goods	100000	4		SWN Revised	enc:2;tl:4
+Ship Maintenance Parts	Commodity (1 ton)	goods	25000	0		SWN Revised	enc:2;tl:5
+Building Materials	Commodity (1 ton)	goods	10000	0		SWN Revised	enc:2;tl:0
+Pretech Junk	Commodity (1 ton)	goods	50000	4		SWN Revised	enc:2;tl:0
+Energy Small Arms	Commodity (1 ton)	goods	10000	4		SWN Revised	enc:2;tl:0
+Pretech Small Arms	Commodity (1 ton)	goods	100000	5		SWN Revised	enc:2;tl:0
+Projectile Small Arms	Commodity (1 ton)	goods	5000	1		SWN Revised	enc:2;tl:4
+Hand Tools	Commodity (1 ton)	goods	5000	0		SWN Revised	enc:2;tl:4
+Industrial Tools	Commodity (1 ton)	goods	10000	1		SWN Revised	enc:2;tl:0
+Medical Tools	Commodity (1 ton)	goods	50000	2		SWN Revised	enc:2;tl:2
+Janitor Bot	Menial cleaning expert system	utility	1000	4	companion	SWN Revised	enc:2;tl:0
+Civilian Security Bot	Non-lethal guard bot	utility	5000	4	companion	SWN Revised	enc:2;tl:2
+Repair Bot	Technical maintenance expert system	utility	5000	4	companion	SWN Revised	enc:2;tl:1
+Industrial Work Bot	Heavy lifting expert system	utility	2000	4	companion	SWN Revised	enc:2;tl:4
+Companion Bot	Social/domestic expert system	utility	2500	4	companion	SWN Revised	enc:2;tl:4
+Soldier Bot	Standard military expert system	utility	10000	4	companion	SWN Revised	enc:2;tl:4
+Heavy Warbot	High-threat combat expert system	utility	50000	4	companion	SWN Revised	enc:2;tl:4
+Primitive Drone	TL3 surveillance drone	utility	250	4	companion	SWN Revised	enc:2;tl:5
+Void Hawk	Deep-space surveillance drone	utility	5000	4	companion	SWN Revised	enc:2;tl:5
+Stalker Drone	Standard TL4 flying drone	utility	1000	4	companion	SWN Revised	enc:2;tl:1
+Cuttlefish Drone	Aqueous surveillance drone	utility	2000	4	companion	SWN Revised	enc:2;tl:1
+Ghostwalker Drone	Radar-transparent stealth drone	utility	3000	4	companion	SWN Revised	enc:2;tl:2
+Sleeper Drone	Long-loiter surveillance drone	utility	2500	4	companion	SWN Revised	enc:2;tl:1
+Pax Drone	TL5 pacification drone	utility	10000	4	companion	SWN Revised	enc:2;tl:1
+Alecto Drone	TL5 autonomous VI drone	utility	50000	4	companion	SWN Revised	enc:2;tl:2

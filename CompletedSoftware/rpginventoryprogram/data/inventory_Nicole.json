@@ -1,0 +1,16 @@
+{
+  "player": "Nicole",
+  "currency": 900,
+  "encumbrance_limit": 100.0,
+  "items": [
+    {
+      "id": "3",
+      "name": "Dagger",
+      "qty": 1,
+      "weight": 0.5,
+      "price": 100,
+      "sell_price": 50,
+      "category": "weapon"
+    }
+  ]
+}

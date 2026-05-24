@@ -1,0 +1,57 @@
+Screen {
+    layout: vertical;
+    padding: 1;
+}
+
+/* Tables should dominate available space */
+#items_datatable,
+#cart_items {
+    height: 1fr;
+}
+
+/* Inputs and buttons should be percentage-based */
+#player_name,
+#server_ip,
+#store_selection {
+    width: 100%;
+    max-width: 1fr;
+}
+
+#button_connect {
+    width: 100%;
+}
+
+/* Cart controls */
+#cart_item_qty {
+    width: 30%;
+}
+
+#cart_adjust_quantity,
+#cart_delete_item {
+    width: 35%;
+}
+
+/* Sorting and searching */
+#sort_option {
+    width: 20%;
+}
+
+#item_search_input {
+    width: 60%;
+}
+
+#item_button_searchsort {
+    width: 20%;
+}
+
+/* Centered sections */
+#totals,
+#tab_connections {
+    align-horizontal: center;
+}
+
+/* Stat blocks */
+#static_is,
+#static_pr {
+    width: 50%;
+}

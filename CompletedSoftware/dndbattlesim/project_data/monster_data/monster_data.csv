@@ -1,0 +1,31 @@
+monster_name,hp,ac,attack_bonus,damage,challenge_rating,flags
+Goblin,7,15,4,1d6+2,0.25,cowardly
+Kobold,5,12,4,1d4+2,0.125,pack_tactics
+Skeleton,13,13,4,1d6+2,0.25,"undead,resistant_piercing"
+Zombie,22,8,3,1d6+1,0.25,"undead,slow"
+Bandit,11,12,3,1d6+1,0.125,humanoid
+Wolf,11,13,4,2d4+2,0.25,"pack_tactics,beast"
+Orc,15,13,5,1d12+3,0.5,reckless
+Bugbear,27,16,6,2d8+2,1,ambush
+Ghoul,22,12,4,2d6+2,1,"undead,paralysis"
+Ogre,59,11,6,2d6+4,2,large
+Gelatinous Cube,84,6,6,3d6,2,"ooze,acid,blind"
+Minotaur,76,14,6,2d12+4,3,charge
+Manticore,68,14,5,1d8+3,3,flying
+Werewolf,58,11,6,2d4+4,3,"shapechanger,resistant_nonmagical"
+Troll,84,15,7,1d6+4,5,hpregen10
+Bulette,94,17,7,4d12+4,5,"burrow,charge"
+Hill Giant,105,13,8,3d8+5,5,giant
+Wraith,67,13,7,2d6+3,5,"undead,incorporeal,life_drain"
+Frost Giant,138,15,9,3d12+6,8,cold
+Hydra,172,15,8,2d10+5,8,regrowth
+Young Green Dragon,136,18,8,2d10+4,8,"flying,poison,breath_weapon"
+Mind Flayer,71,15,7,4d8+4,7,"psionic,stun"
+Stone Golem,178,17,10,3d8+6,10,"construct,magic_resistance"
+Fire Giant,162,18,11,6d6+7,9,fire
+Adult Black Dragon,195,19,11,2d10+6,14,"flying,acid,breath_weapon"
+Beholder,180,18,10,4d10,13,"flying,anti_magic"
+Pit Fiend,300,19,14,4d6+8,20,"fiend,fire,magic_resistance"
+Ancient Red Dragon,546,22,17,2d10+10,24,"flying,fire,breath_weapon,boss"
+Lich,135,17,9,3d8+5,21,"undead,boss,phylactery"
+Tarrasque,676,25,19,4d12+10,30,"boss,legendary,hpregen20"

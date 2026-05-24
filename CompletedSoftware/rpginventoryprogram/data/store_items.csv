@@ -1,0 +1,191 @@
+id,name,description,price,sell_price,weight,category
+1,Longsword,"Damage d8, Toughness 10",150,75,3.0,weapon
+2,Shortsword,"Damage d6, Toughness 10, AP 1, Raise +d8",75,37,2.0,weapon
+3,Dagger,"Damage d4, Toughness 10, Thrown 3/6/12, +2 to ready",100,50,0.5,weapon
+4,Greatsword,"Damage d10, Toughness 12, AP 1, 2 hands",250,125,6.0,weapon
+5,Bastard sword,"Damage d8/d10, Toughness 10, Versatile (1 or 2 hands)",200,100,4.0,weapon
+6,Rapier,"Damage d4, Toughness 10, Parry +1, AP 1",150,75,2.0,weapon
+7,Main Gauche,"Damage d4, Toughness 10, Parry +1",100,50,1.0,weapon
+8,Katana,"Damage d6+2, Toughness 10, Sharp",1000,500,3.0,weapon
+9,Wakizashi,"Damage d6+1, Toughness 10, AP 1",500,250,2.0,weapon
+10,Tanto,"Damage d6, Toughness 10, Easy to hide, +2 to ready",150,75,0.5,weapon
+11,Cavalry sabre,"Damage d6, AP 2 when charging, Raise +d8",150,75,3.0,weapon
+12,Handaxe,"Damage d6, Toughness 10",100,50,2.0,weapon
+13,Battleaxe,"Damage d8/d10, Versatile",120,60,4.0,weapon
+14,Throwing axe,"Damage d6, Thrown 3/6/12",50,25,1.5,weapon
+15,Greataxe,"Damage d12, Toughness 10, AP 1, 2 hands",250,125,7.0,weapon
+16,Cudgel,"Damage d6, Toughness 10",10,5,2.0,weapon
+17,Mace,"Damage d8, AP 2 vs rigid armour",100,50,4.0,weapon
+18,Warhammer,"Damage d6, AP 2 vs rigid armour, Raise +d8",120,60,3.0,weapon
+19,Maul,"Damage d12, AP 2 vs rigid armour, 2 hands",150,75,8.0,weapon
+20,Staff,"Damage d4, Parry +1, Reach 1, 2 hands",10,5,3.0,weapon
+21,Ironshod staff,"Damage d4, Parry +1, Reach 1, AP 2 vs rigid armour",25,12,4.0,weapon
+22,Sap,"Damage d4, AP -1, Nonlethal, Raise +d10",10,5,0.5,weapon
+23,Flail,"Damage d6, +1 Fighting, Ignore Shield Bonus",100,50,5.0,weapon
+24,Morning star,"Damage d10, Parry -1, AP 2 vs rigid armour",120,60,6.0,weapon
+25,Whip,"Damage d4, Parry -1, Reach 1, Entangling",50,25,1.0,weapon
+26,Spear,"Damage d6, Parry +1, Reach 1, Thrown 3/6/12",50,25,3.0,weapon
+27,Trident,"Damage d8, Reach 1",75,37,4.0,weapon
+28,Javelin,"Damage d6, Reach 1, Thrown 4/8/16",20,10,2.0,weapon
+29,Pike,"Damage d8, Reach 2, 2 hands",80,40,8.0,weapon
+30,Lance,"Damage d8, AP 2 when charging, Mounted only, Reach 2",150,75,10.0,weapon
+31,Halberd,"Damage d8, AP 1, Reach 1, 2 hands",150,75,8.0,weapon
+32,Tiger claws,"Damage d6, Parry +1, Exotic",100,50,1.0,weapon
+33,Kyoketsu-shoge,"Damage d6, Reach 2, +1 Fighting, Exotic",150,75,2.0,weapon
+34,Buckler,"Parry +1",25,12,2.0,armor
+35,Target Shield,"Parry +1, AP -1, Light Cover",50,25,4.0,armor
+36,Kite Shield,"Parry +1, AP -1, Medium Cover",100,50,8.0,armor
+37,Tower Shield,"Parry +1, AP -1, Heavy Cover",200,100,15.0,armor
+38,Chainsaw,"Damage d12, AP 2, Dangerous",100,50,10.0,weapon
+39,Brass knuckles,"Damage d4, Easy to hide, +2 to ready",10,5,0.5,weapon
+40,Baton,"Damage d4, Optionally Nonlethal",10,5,1.0,weapon
+41,Sling,"Range 10/20/40, Damage 2d4",10,5,0.5,weapon
+42,Blowgun,"Range 6/12/24, Damage 2d4+1, AP 1",10,5,0.5,weapon
+43,Shortbow,"Range 12/24/48, Damage 2d6, 2 hands",50,25,2.0,weapon
+44,Longbow,"Range 15/30/60, Damage 2d6, AP 1, 2 hands",100,50,3.0,weapon
+45,Crossbow,"Range 15/30/60, Damage 2d6, AP 2, 2 hands",150,75,5.0,weapon
+46,Hand crossbow,"Range 10/20/40, Damage 2d4+1, AP 1, Repeating",100,50,2.0,weapon
+47,Wand of Fireballs,"Range 10/20/40, 2d6 Fire (MBT)",1000,500,1.0,magic
+48,Wand of Frost,"Range 6/12/24, 2d6 Cold (SBT), Fatigue",500,250,1.0,magic
+49,Wand of Lightning,"Range 10/20/40, 2d6+1 Elec, AP 2 vs metal",1000,500,1.0,magic
+50,Wand of Acid,"Range 12/24/48, 2d4 Acid (SBT), Lingering damage",500,250,1.0,magic
+51,Derringer,"Range 6/12/24, 2d6+1, AP 1, Easy to hide",100,50,0.5,weapon
+52,Semi-auto pistol,"Range 12/24/48, 2d6, Double Tap",200,100,2.0,weapon
+53,Revolver,"Range 12/24/48, 2d6+1, AP 1",150,75,2.0,weapon
+54,Rifle,"Range 24/48/96, 2d8, Snapfire, 2 hands",500,250,8.0,weapon
+55,Shotgun,"Range 12/24/48, 1-3d6, +2 Shooting",300,150,6.0,weapon
+56,Machine gun,"Range 12/24/48, 2d6, AP 1, RoF 3",500,250,12.0,weapon
+57,Grenade,"Range 5/10/20, 2d6 MBT, Thrown",100,50,0.5,consumable
+58,Flamethrower,"Template Cone, 2d10 Fire, Ignites targets",1000,500,15.0,weapon
+59,Leather armour,"Protection +1, Covers torso/arms/legs",100,50,2.0,armor
+60,Boiled leather cuirass,"Protection +1, Covers torso, Rigid",100,50,2.0,armor
+61,Chain Hauberk,"Protection +2, Covers torso/arms/legs",250,125,3.0,armor
+62,Chainmail vest,"Protection +2, Covers torso",100,50,2.0,armor
+63,Brigandine,"Protection +3, Covers torso",250,125,3.0,armor
+64,Plate Corselet,"Protection +3, Covers torso, Rigid",500,250,3.0,armor
+65,Heavy trenchcoat,"Protection +2/+0, Covers torso/arms/legs",250,125,2.0,armor
+66,Leather Jacket,"Protection +1/+0, Covers torso/arms",100,50,1.0,armor
+67,Flak Jacket,"Protection +2/+4 vs guns",100,50,2.0,armor
+68,Leather cap,"Protection +1, Headshot protection 50%",10,5,0.5,armor
+69,Chainmail coif,"Protection +2, Headshot protection 50%",75,37,1.0,armor
+70,Pot Helm,"Protection +3, Headshot protection 50%",75,37,2.0,armor
+71,Steel Helmet,"Protection +3, Enclosed (-2 Notice)",150,75,2.0,armor
+72,Full Helm,"Protection +3, Enclosed with Visor",250,125,2.0,armor
+73,Flintlock Pistol,"Range 5/10/20, Damage 2d6+1",150,75,3.0,weapon
+74,Musket,"Range 10/20/40, Damage 2d8",300,150,15,weapon
+75,Blunderbuss,"Range 10/20/40, Damage 1-3d6",300,150,12,weapon
+76,Kentucky Rifle,"Range 15/30/60, Damage 2d8, AP 2, reload 4",300,150,8,weapon
+77,Springfield Model 1861,"Range 15/30/60, Damage 2d8",250,125,11,weapon
+78,Horse,"Pace 10, d8 Running Die, Size 1",300,150,1000.0,mount
+79,War Horse,"Pace 8, d8 Running Die, Size 2, Kicking Str+d4",750,375,1200.0,mount
+80,Saddle,"Basic riding gear",10,5,10.0,gear
+81,Elaborate Saddle,"Comfortable, high quality, +1 Riding",50,25,15.0,gear
+82,Backpack,"Storage, holds 50 lbs",50,25,2.0,gear
+83,Bedroll,"Sleeping gear",25,12,4.0,gear
+84,Blanket,"Warm wool",10,5,4.0,gear
+85,Camera (Disposable),"One use, low quality film",10,5,0.5,gear
+86,Camera (Regular),"Standard film camera",50,25,2.0,gear
+87,Camera (Digital),"High res images and video",200,100,1.0,gear
+88,Candle,"Provides dim light for 2 radius",1,0,0.5,gear
+89,Canteen,"Holds 1 quart of water",5,2,1.0,gear
+90,Crowbar,"Str+d4 damage, +1 to pry open doors",10,5,2.0,gear
+91,First Aid Kit,"Basic medical supplies, 3 uses",10,5,1.0,gear
+92,Flashlight,"10 beam, battery powered",20,10,1.0,gear
+93,Flask,"Ceramic or metal, holds 1 pint",5,2,1.0,gear
+94,Flint and Steel,"Start fires",3,1,0.1,gear
+95,Goggles,"Eye protection",20,10,1.0,clothing
+96,Grappling Hook,"With line attached",100,50,2.0,gear
+97,Hammer,"Tool, Str+d4 damage",10,5,1.0,gear
+98,Handcuffs,"Steel, requires Lockpicking to escape",15,7,1.0,gear
+99,Lantern,"Provides light in 4 radius, requires oil",25,12,2.0,gear
+100,Lighter,"Instant fire source",2,1,0.1,gear
+101,Lockpicks,"Required for Lockpicking rolls",200,100,1.0,gear
+102,Medic Kit,"+1 Healing rolls, 5 uses",100,50,4.0,gear
+103,Oil,"1 pint, fuels lanterns for 6 hours",2,1,1.0,gear
+104,Quiver,"Holds 20 arrows/bolts",10,5,2.0,gear
+105,Rope,"10 yards, hemp or nylon",10,5,10.0,gear
+106,Shovel,"Digging tool, Improvised weapon",5,2,5.0,gear
+107,Soap,"Bar of cleaning soap",1,0,0.2,gear
+108,Tool Kit,"General purpose, required for Repair rolls",200,100,5.0,gear
+109,Torch,"1 hour fuel, 4 radius light, Str+d4 dmg",5,2,1.0,gear
+110,Umbrella,"Protection from rain",5,2,1.0,gear
+111,Whistle,"Signaling device",2,1,0.1,gear
+112,Hiking Boots,"Durable footwear",100,50,2.0,clothing
+113,Camouflage Fatigues,"+1 Stealth in appropriate terrain",20,10,2.0,clothing
+114,Casual Clothing,"Jeans and t-shirt",20,10,2.0,clothing
+115,Formal Clothing,"Suit or dress, +1 Persuasion in high society",200,100,3.0,clothing
+116,Winter Gear,"+2 Vigor vs Cold",200,100,5.0,clothing
+117,Winter Boots,"Insulated footwear",100,50,3.0,clothing
+118,Desktop Computer,"Home workstation, powerful processor",800,400,20.0,gear
+119,GPS,"Satellite navigation, prevents getting lost",250,125,1.0,gear
+120,Handheld Computer,"PDA or Smartphone",250,125,0.5,gear
+121,Laptop,"Portable computer",1000,500,5.0,gear
+122,Bipod,"Negates Recoil penalty when prone",100,50,1.0,weapon_mod
+123,Red Dot Sight,"+1 Shooting at Short Range",50,25,0.5,weapon_mod
+124,Rifle Scope,"Negates Long Range penalties",100,50,1.0,weapon_mod
+125,Fast Food Meal,"Greasy and cheap",10,0,1.0,consumable
+126,Good Meal,"Restaurant quality",50,0,1.0,consumable
+127,MRE,"Self-heating military ration",10,5,1.0,consumable
+128,Trail Rations,"Dried food, 5 days worth",50,25,5.0,consumable
+129,Pepper Spray,"Shooting roll range 3, Vigor check or Blind/Stun",15,7,0.5,weapon
+130,Stun Gun,"Touch attack, Vigor check or Stunned",50,25,1.0,weapon
+131,Surveillance Bug,"Audio transmitter, requires receiver",500,250,0.1,gear
+132,Button Camera,"Tiny disguise camera",500,250,0.1,gear
+133,Cellular Interceptor,"Intercepts mobile calls within 1 mile",2000,1000,5.0,gear
+134,Lineman's Telephone,"Tap into landlines",150,75,2.0,gear
+135,Night Vision Goggles,"Eliminates Dim/Dark penalties",500,250,3.0,gear
+136,Parabolic Microphone,"Listen through windows/distance",750,375,4.0,gear
+137,Telephone Tap,"Physical wire tap",200,100,0.5,gear
+138,Transmitter Detector,"Detects bugs within short range",500,250,2.0,gear
+139,Arrows/Bolts,"Bundle of 20",10,5,2.0,ammo
+140,Bullets (Small),"Box of 50 (.22 to .38 cal)",10,5,2.0,ammo
+141,Bullets (Medium),"Box of 50 (9mm to .45)",20,10,3.0,ammo
+142,Bullets (Large),"Box of 50 (5.56 to 7.62)",50,25,5.0,ammo
+143,Laser Battery (Pistol),"Provides 50 shots",20,10,0.5,ammo
+144,Laser Battery (Rifle),"Provides 30 shots",50,25,1.0,ammo
+145,Laser Battery (Gatling),"Provides 100 shots",100,50,5.0,ammo
+146,Shot and Powder,"For blackpowder weapons, 20 shots",10,5,2.0,ammo
+147,Shotgun Shells,"Box of 25",15,7,3.0,ammo
+148,Sling Stones,"Bag of 20",1,0,5.0,ammo
+149,Bicycle,"Pace 24, offroad capable",250,125,30.0,vehicle
+150,Carriage,"Drawn by horses",1000,500,500.0,vehicle
+151,Early Car,"Model T era, TS 40, Toughness 8",5000,2500,2000.0,vehicle
+152,Street Bike,"Motorcycle, TS 120, Toughness 8",5000,2500,500.0,vehicle
+153,Dirt Bike,"Offroad Cycle, TS 80, Toughness 8",3000,1500,400.0,vehicle
+154,Compact Car,"TS 110, Toughness 10 (2)",10000,5000,3000.0,vehicle
+155,Mid-sized Car,"TS 120, Toughness 11 (2)",20000,10000,3500.0,vehicle
+156,Minivan,"TS 100, Toughness 12 (2), Seats 7",25000,12500,4500.0,vehicle
+157,SUV,"TS 110, Toughness 13 (2), 4WD",30000,15000,5000.0,vehicle
+158,Sports Car,"TS 160, Toughness 10 (2), Handling +1",60000,30000,3000.0,vehicle
+159,Semi-Truck,"TS 90, Toughness 16 (2), Hauler",150000,75000,20000.0,vehicle
+160,Jeep,"TS 100, Toughness 12 (2), Offroad 4WD",25000,12500,3500.0,vehicle
+161,M4 Sherman,"WWII Tank, Med Armor, 75mm cannon",50000,25000,66000.0,vehicle_tank
+162,M5A1 Stuart,"WWII Light Tank, Fast, 37mm cannon",35000,17500,32000.0,vehicle_tank
+163,T-34/76,"WWII Tank, Sloped Armor, 76mm cannon",40000,20000,60000.0,vehicle_tank
+164,Pz IVJ,"WWII Tank, Versatile, 75mm cannon",50000,25000,55000.0,vehicle_tank
+165,Pz VI Tiger II,"WWII Heavy Tank, Heavy Armor, 88mm",120000,60000,150000.0,vehicle_tank
+166,M1A1 Abrams,"Modern MBT, Heavy Composite, 120mm",6000000,3000000,130000.0,vehicle_tank
+167,M2 Bradley,"IFV, Autocannon + TOW, Troop Carrier",3000000,1500000,60000.0,vehicle_tank
+168,T-72 MBT,"Soviet MBT, 125mm gun, Autoloader",1500000,750000,90000.0,vehicle_tank
+169,T-80 MBT,"Soviet MBT, Turbine engine, ERA armor",2500000,1250000,95000.0,vehicle_tank
+170,BTR-70 APC,"Wheeled APC, 14.5mm MG, Amphibious",500000,250000,25000.0,vehicle_tank
+171,Hover Tank,"Sci-Fi, TS 60, Heavy Laser Cannon",10000000,5000000,100000.0,vehicle_tank
+172,Hover APC,"Sci-Fi, TS 80, Troop transport",5000000,2500000,50000.0,vehicle_tank
+173,Biplane,"WWI Era, TS 100, Open cockpit",15000,7500,2000.0,vehicle_air
+174,Cessna 172,"Civilian prop plane, TS 140",100000,50000,2500.0,vehicle_air
+175,Bell 206 Helicopter,"Civilian chopper, TS 130",1000000,500000,3000.0,vehicle_air
+176,Learjet,"Private Jet, TS 500, Luxury",10000000,5000000,15000.0,vehicle_air
+177,Space Shuttle,"Orbital Vehicle, TS Mach 25",500000000,250000000,4000000.0,vehicle_space
+178,B-17 Flying Fortress,"WWII Bomber, Heavy payload, Turrets",300000,150000,36000.0,vehicle_air
+179,BF-109,"WWII Fighter, TS 350, Agile",100000,50000,6000.0,vehicle_air
+180,P-51 Mustang,"WWII Fighter, TS 400, Long range",110000,55000,7000.0,vehicle_air
+181,A6M Zero,"WWII Fighter, TS 330, High maneuverability",90000,45000,5000.0,vehicle_air
+182,Spitfire Mk2,"WWII Fighter, TS 360, Interceptor",110000,55000,6000.0,vehicle_air
+183,AH-64 Apache,"Attack Helicopter, Hellfires + 30mm",15000000,7500000,11000.0,vehicle_air
+184,AV-8B Harrier,"VTOL Jet, TS 600, Ground attack",30000000,15000000,14000.0,vehicle_air
+185,F-15 Eagle,"Air Superiority Fighter, TS Mach 2.5",40000000,20000000,28000.0,vehicle_air
+186,Su-27 Flanker,"Air Superiority Fighter, TS Mach 2.3",35000000,17500000,36000.0,vehicle_air
+187,UH-1 Huey,"Utility Helicopter, TS 130, Transport",500000,250000,5000.0,vehicle_air
+188,Row Boat,"Oars, seats 4",200,100,100.0,vehicle_water
+189,Speed Boat,"TS 40, Fiberglass hull",20000,10000,2000.0,vehicle_water
+190,12 Pounder Cannon,"Range 50/100/200, damage 3d6+1, AP 4",10000,5000,1200.0,weapon

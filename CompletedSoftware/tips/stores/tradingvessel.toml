@@ -1,0 +1,5 @@
+id = "frontier_post"
+name = "Obsidian Trading Vessel"
+max_rarity = 6
+price_multiplier = 1.0
+flags = ["low_tax", "variable_prices", "all_items_available"]

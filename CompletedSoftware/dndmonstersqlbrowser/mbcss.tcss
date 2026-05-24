@@ -1,0 +1,19 @@
+Screen {
+    layout: vertical;
+    background: $surface;
+}
+
+#search_query {
+    width: 100%;
+    height: 15%;
+}
+
+#monster_datatable{
+    width: 100%;
+    height: 60%;
+}
+
+#monster_details{
+    width: 100%;
+    height: 25%;
+}

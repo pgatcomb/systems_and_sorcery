@@ -1,0 +1,5 @@
+id = "UD"
+name = "Union Depot"
+max_rarity = 3
+price_multiplier = 1.25
+flags = ["med_tax"]

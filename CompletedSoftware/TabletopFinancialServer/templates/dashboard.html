@@ -1,0 +1,316 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="dashboard">
+    <!-- Header -->
+    <header class="header">
+        <h1>⚔️ Campaign Finance Manager</h1>
+        <div class="header-controls">
+            <button class="btn btn-secondary" onclick="showExportImport()">📁 Import/Export</button>
+        </div>
+    </header>
+
+    <!-- Top Bar - Date Controls -->
+    <div class="date-bar">
+        <div class="current-date">
+            <span class="date-label">Current Date:</span>
+            <span class="date-value" id="currentDate">{{ calendar.get_date_string() }}</span>
+        </div>
+        <div class="date-controls">
+            <button class="btn btn-primary" onclick="advanceTime('day')">+1 Day</button>
+            <button class="btn btn-primary" onclick="advanceTime('week')">+1 Week</button>
+            <button class="btn btn-primary" onclick="advanceTime('month')">+1 Month</button>
+            <button class="btn btn-outline" onclick="showSetDateModal()">📅 Set Date</button>
+        </div>
+    </div>
+
+    <!-- Summary Bar -->
+    <div class="summary-bar">
+        <div class="summary-item">
+            <span class="summary-label">Cash on Hand:</span>
+            <span class="summary-value" id="cashOnHand" onclick="showCashModal()" style="cursor: pointer;" title="Click to edit">{{ "%.2f"|format(calendar.cash_on_hand) }} 🪙</span>
+        </div>
+        <div class="summary-item">
+            <span class="summary-label">Net Worth:</span>
+            <span class="summary-value" id="netWorth">{{ "%.2f"|format(summary.net_worth) }} 🪙</span>
+        </div>
+        <div class="summary-item">
+            <span class="summary-label">Monthly Income:</span>
+            <span class="summary-value positive" id="monthlyIncome">+{{ "%.2f"|format(summary.monthly_income) }}</span>
+        </div>
+        <div class="summary-item">
+            <span class="summary-label">Monthly Expenses:</span>
+            <span class="summary-value negative" id="monthlyExpenses">-{{ "%.2f"|format(summary.monthly_expenses) }}</span>
+        </div>
+        <div class="summary-item">
+            <span class="summary-label">Monthly Net:</span>
+            <span class="summary-value {{ 'positive' if summary.monthly_net >= 0 else 'negative' }}" id="monthlyNet">{{ "%.2f"|format(summary.monthly_net) }}</span>
+        </div>
+    </div>
+
+    <!-- Main Content Grid -->
+    <div class="content-grid">
+        <!-- Left Panel - Assets & Liabilities -->
+        <div class="panel assets-panel">
+            <div class="panel-header">
+                <h2>💰 Assets & Liabilities</h2>
+                <button class="btn btn-small" onclick="showAssetModal()">+ Add Asset</button>
+            </div>
+            <div class="panel-content">
+                <table class="data-table" id="assetsTable">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Value</th>
+                            <th>Income</th>
+                            <th>Expense</th>
+                            <th>Frequency</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for asset in assets %}
+                        <tr>
+                            <td>{{ asset.name }}</td>
+                            <td class="{{ 'positive' if asset.value >= 0 else 'negative' }}">{{ "%.2f"|format(asset.value) }}</td>
+                            <td class="positive">{{ "%.2f"|format(asset.income) }}</td>
+                            <td class="negative">{{ "%.2f"|format(asset.expense) }}</td>
+                            <td>{{ asset.frequency }}</td>
+                            <td>
+                                <button class="btn-icon" onclick="editAsset('{{ asset.id }}')" title="Edit">✏️</button>
+                                <button class="btn-icon" onclick="deleteAsset('{{ asset.id }}')" title="Delete">🗑️</button>
+                            </td>
+                        </tr>
+                        {% else %}
+                        <tr>
+                            <td colspan="6" class="empty-state">No assets yet. Add your first asset to get started!</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Right Panel - Financial Events -->
+        <div class="panel events-panel">
+            <div class="panel-header">
+                <h2>📅 Scheduled Events</h2>
+                <button class="btn btn-small" onclick="showEventModal()">+ Add Event</button>
+            </div>
+            <div class="panel-content">
+                <table class="data-table" id="eventsTable">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Amount</th>
+                            <th>Frequency</th>
+                            <th>Next Date</th>
+                            <th>Dice</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for event in events %}
+                        <tr>
+                            <td>{{ event.name }}</td>
+                            <td class="{{ 'positive' if event.amount >= 0 else 'negative' }}">{{ "%.2f"|format(event.amount) }}</td>
+                            <td>{{ event.frequency }}</td>
+                            <td>{{ event.next_date.strftime('%Y-%m-%d') if event.next_date else 'N/A' }}</td>
+                            <td>{{ event.dice_formula or '-' }}</td>
+                            <td>
+                                <button class="btn-icon" onclick="editEvent('{{ event.id }}')" title="Edit">✏️</button>
+                                <button class="btn-icon" onclick="deleteEvent('{{ event.id }}')" title="Delete">🗑️</button>
+                            </td>
+                        </tr>
+                        {% else %}
+                        <tr>
+                            <td colspan="6" class="empty-state">No scheduled events. Add recurring or one-time events!</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom Panel - Graphs -->
+    <div class="graphs-container">
+        <div class="graph-panel">
+            <div id="networthGraph" class="graph-content">
+                <iframe src="/api/graph/networth" frameborder="0" style="width: 100%; height: 400px;"></iframe>
+            </div>
+        </div>
+        <div class="graph-panel">
+            <div id="incomeExpenseGraph" class="graph-content">
+                <iframe src="/api/graph/income_expense" frameborder="0" style="width: 100%; height: 400px;"></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal for Adding/Editing Asset -->
+<div id="assetModal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3 id="assetModalTitle">Add Asset</h3>
+            <button class="close-btn" onclick="closeAssetModal()">&times;</button>
+        </div>
+        <form id="assetForm">
+            <input type="hidden" id="assetId">
+            <div class="form-group">
+                <label for="assetName">Name:</label>
+                <input type="text" id="assetName" required>
+            </div>
+            <div class="form-group">
+                <label for="assetValue">Value:</label>
+                <input type="number" id="assetValue" step="0.01" required>
+            </div>
+            <div class="form-group">
+                <label for="assetIncome">Income:</label>
+                <input type="number" id="assetIncome" step="0.01" value="0">
+            </div>
+            <div class="form-group">
+                <label for="assetExpense">Expense:</label>
+                <input type="number" id="assetExpense" step="0.01" value="0">
+            </div>
+            <div class="form-group">
+                <label for="assetFrequency">Frequency:</label>
+                <select id="assetFrequency">
+                    {% for freq in asset_frequencies %}
+                    <option value="{{ freq }}">{{ freq.capitalize() }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="form-actions">
+                <button type="button" class="btn btn-secondary" onclick="closeAssetModal()">Cancel</button>
+                <button type="submit" class="btn btn-primary">Save</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Modal for Adding/Editing Event -->
+<div id="eventModal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3 id="eventModalTitle">Add Event</h3>
+            <button class="close-btn" onclick="closeEventModal()">&times;</button>
+        </div>
+        <form id="eventForm">
+            <input type="hidden" id="eventId">
+            <div class="form-group">
+                <label for="eventName">Name:</label>
+                <input type="text" id="eventName" required>
+            </div>
+            <div class="form-group">
+                <label for="eventAmount">Amount:</label>
+                <input type="number" id="eventAmount" step="0.01" required>
+            </div>
+            <div class="form-group">
+                <label for="eventFrequency">Frequency:</label>
+                <select id="eventFrequency">
+                    {% for freq in event_frequencies %}
+                    <option value="{{ freq }}">{{ freq.capitalize() }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="eventNextDate">Next Date:</label>
+                <input type="date" id="eventNextDate">
+            </div>
+            <div class="form-group">
+                <label for="eventDiceFormula">Dice Formula (optional):</label>
+                <input type="text" id="eventDiceFormula" placeholder="e.g., 2d6+10">
+                <small>Use format: NdN+modifier (e.g., 2d6+10, 3d10-5)</small>
+            </div>
+            <div class="form-actions">
+                <button type="button" class="btn btn-secondary" onclick="closeEventModal()">Cancel</button>
+                <button type="submit" class="btn btn-primary">Save</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Modal for Set Date -->
+<div id="setDateModal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3>Set Current Date</h3>
+            <button class="close-btn" onclick="closeSetDateModal()">&times;</button>
+        </div>
+        <form id="setDateForm">
+            <div class="form-group">
+                <label for="newDate">New Date:</label>
+                <input type="date" id="newDate" value="{{ calendar.get_date_string() }}" required>
+            </div>
+            <div class="form-actions">
+                <button type="button" class="btn btn-secondary" onclick="closeSetDateModal()">Cancel</button>
+                <button type="submit" class="btn btn-primary">Set Date</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Modal for Cash on Hand -->
+<div id="cashModal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3>Set Cash on Hand</h3>
+            <button class="close-btn" onclick="closeCashModal()">&times;</button>
+        </div>
+        <form id="cashForm">
+            <div class="form-group">
+                <label for="cashAmount">Cash Amount:</label>
+                <input type="number" id="cashAmount" step="0.01" value="{{ calendar.cash_on_hand }}" required>
+            </div>
+            <div class="form-actions">
+                <button type="button" class="btn btn-secondary" onclick="closeCashModal()">Cancel</button>
+                <button type="submit" class="btn btn-primary">Update</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Modal for Pending Events -->
+<div id="pendingEventsModal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3>⚠️ Pending Events</h3>
+            <button class="close-btn" onclick="closePendingEventsModal()">&times;</button>
+        </div>
+        <div class="modal-body">
+            <p>Time has paused because the following event(s) are due:</p>
+            <div id="pendingEventsList"></div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal for Import/Export -->
+<div id="exportImportModal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3>Import/Export Data</h3>
+            <button class="close-btn" onclick="closeExportImportModal()">&times;</button>
+        </div>
+        <div class="modal-body">
+            <div class="export-section">
+                <h4>Export Data</h4>
+                <p>Download all campaign data as JSON file</p>
+                <a href="/api/export" class="btn btn-primary" download>⬇️ Download JSON</a>
+            </div>
+            <hr>
+            <div class="import-section">
+                <h4>Import Data</h4>
+                <p>Upload a JSON file to restore campaign data</p>
+                <form id="importForm">
+                    <input type="file" id="importFile" accept=".json" required>
+                    <button type="submit" class="btn btn-primary">⬆️ Upload & Import</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Notification Toast -->
+<div id="toast" class="toast"></div>
+{% endblock %}
