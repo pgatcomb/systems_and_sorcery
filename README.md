@@ -19,9 +19,11 @@ This repository serves as a professional portfolio and technical archive of soft
 The Rust directory highlights safety-critical systems and high-concurrency architectures.
 *   **rust_reactor:** A multithreaded reactor simulation utilizing the Axum framework for API-driven state management.
 *   **rustsqlserver:** A lightweight SQL-backed server demonstrating Rust-to-Python interoperability and asynchronous database handling.
+*   **rusty8:** An emulation of the PDP-8 computer using the command line.
 
 ### Python Development
 Focuses on rapid prototyping, hardware interfacing, and utility development.
+*   **Assembler:** Implementation of a PDP8 Assembly language assembler to go with the rusty8 application.
 *   **Hardware Integration:** Implementation of the ESC/POS protocol for thermal printer management, including custom template engines.
 *   **Data Analysis & Tooling:** Specialized utilities for *Final Fantasy XIV* market data and crafting optimization.
 *   **General Automation:** A suite of scripts for system-level automation and data processing tasks.
