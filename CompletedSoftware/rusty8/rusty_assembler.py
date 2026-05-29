@@ -1,7 +1,7 @@
 '''PDP-8 Assembler'''
 '''Writes files into the format memory address, value in a simple txt'''
+import sys
 
-FILENAME = 'pdp8_example_jmp.txt'
 COMMENT_MARKER = "/"
 operations = {}
 
@@ -117,10 +117,15 @@ def write_assembled_program(program_dictionary:dict):
     
 # Run the main progarm
 if __name__ == "__main__":
+    if len(sys.argv) < 2:
+        print("Usage: python rusty_assembler.py <filename>")
+        sys.exit(1)
+
+    input_filename = sys.argv[1]
     populate_operations("pdp8opcodes.txt")
     print("Confirming Operations Hashmap")
     for operation in operations:
         print(f"OPCODE: {operation} BASE VALUE: 0o{operations[operation]:04o}")
-    assembled_program = read_file(FILENAME)
+    assembled_program = read_file(input_filename)
     sorted_by_key = dict(sorted(assembled_program.items()))
     write_assembled_program(sorted_by_key)
