@@ -1,0 +1,9 @@
+/ PDP-8 Assembly Example - Add 3 and 4
+*200            / Start assembling at memory location 0200 (octal)
+START,  CLA     / Clear the Accumulator and the Link (Carry) bit
+        TAD A   / Add contents of memory location 'A' (3) to the Accumulator
+        TAD B   / Add contents of memory location 'B' (4) to the Accumulator
+        HLT     / Halt the CPU
+A,      3       / Define variable A with a value of 3
+B,      4       / Define variable B with a value of 4
+$$              / End of program

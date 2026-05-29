@@ -1,0 +1,6 @@
+*200
+COUNT, 7775   / -3
+LOOP, ISZ COUNT
+      JMP LOOP
+      HLT
+$$
