@@ -1,0 +1,34 @@
+id,level,name_level,name,prerequisites,named_prerequisites,requirement,description,notes,research_time
+0,0,Base Tech,Base Technology,"0,0,0,0",None,None,Allows all other techs,Allows all other techs,0
+1,0,Manufacturing 0,Workbench Fabrication,"0,0,0,0",None,None,"Simple tools, wooden items, basic repairs","Can craft melee weapons, traps, and improvised tools TL0-TL2",0
+2,1,Manufacturing 1,Power Tools Shop,"1,6,0,0",Energy 1,None,"Produce simple firearms, ammo; repair light armor; convert raw metal → refined metal",Can craft low quality TL3 Tools,1
+3,2,Manufacturing 2,Basic Fabricator (Blueprint‑Capable),"2,7,30,0","Energy 2, Shelter 1",None,"Craft advanced weapons, armor, drones; manufacture medical injectors",Can craft TL3 items with blueprints,1
+4,3,Manufacturing 3,Complete Fabricator/Workshop,"3,8,27,0","Energy 3, Safety 2",Dungeon|Rustmines of Oldstead Ridge,"Modify vehicles, enhance items, craft prototype weapons, unlock colony‑level upgrades","Can craft advanced tools, laser weapons, etc.",2
+5,0,Energy 0,Campfire/Manual Generators,"0,0,0,0",None,None,Provides light and heat,Primitive but essential at game start,0
+6,1,Energy 1,Solar Array / Micro‑Turbines,"5,0,0,0",None,None,1–Energy 2 units,Weather‑dependent,1
+7,2,Energy 2,Fission Micro‑Reactor or Pretech Battery Bank,"6,26,0,0",Safety 1,None,5–8 energy units; can support multiple 2 systems,TL3 System,2
+8,3,Energy 3,Pretech Fusion Core,"7,19,27,0","Morale 2, Safety 2",Dungeon|The Inversion Spire,15+ energy units; enables full 3 tree,Cutting edge power generation,7
+9,0,Food 0,Foraging & Hunting,"0,0,0,0",None,None,Unreliable but free food,Requires manual questing,0
+10,1,Food 1,Hydroponic Trays / Root Cellars,"6,9,14,0","Energy 1, Water 1",None,Predictable food supply for small colony,Provides enough food for raw sustenence,0
+11,2,Food 2,Automated Greenhouse,"7,10,15,0","Energy 2, Water 2",None,Feeds entire settlement; can grow some biomass,Good quality food,2
+12,3,Food 3,Pretech Bio‑Cultivators,"11,23,0,0",Health 2,Dungon|Sector Toto-Rak,High‑efficiency food; specialized herbs; no spoilage,"Excellent, cutting edge farming tech",5
+13,0,Water 0,River/Catching/Manual Boiling,"0,0,0,0",None,None,Safe if boiled; small supply,Requires manual acquisition,0
+14,1,Water 1,Water Filters & Pumps,"6,13,0,0",Energy 1,None,Clean water for a small settlement,Required for safety and food,2
+15,2,Water 2,Atmospheric Condenser or Deep Well,"7,1,14,0","Energy 2, Safety 1",None,Large supply and stable pressure,"Common, safe levels of water production",7
+16,3,Water 3,Pretech Purifier,"8,15,0,0",Energy 3,Dungeon|The Iron Warrens,"Massive, near‑limiess water supply; can cleanse toxins","Incredible, cutting edge water generation",7
+17,0,Morale 0,Fire Circle / Community Gathering,"0,0,0,0",None,None,Reduces stress; minor morale buff,Narrative driven,0
+18,1,Morale 1,Communal Hall / Radio Uplink,"30,17,0,0",Shelter 1,None,Improves productivity,Unlocks radio communication with traders,1
+19,2,Morale 2,Recreation Center / Holotank,"7,18,0,0",Energy 2,None,Large morale boost,Unlocks settlement projects,2
+20,3,Morale 3,Cultural Nexus / Psionic Meditation Chamber,"19,27,0,0","Morale 2, Safety 2",Dungeon|The Red Basilica,Morale can no longer drop,Major town milestone,14
+21,0,Health 0,Bandages / Improvised Care,"0,0,0,0",None,None,Treats 1 HP/day; high infection chance,Forces early survival tension,0
+22,1,Health 1,Medical Station (Basic),"21,6,0,0",Energy 1,None,"Trauma kits, medfoam, infection control; 1d6+2/day",Players can craft healing items here,1
+23,2,Health 2,Clinic + Diagnostic AI,"22,7,0,0","Energy 2, Manufacturing 1",None,Full HP restore in 8 hours; can treat poisons & toxins,Prevents “weeks of downtime”,7
+24,3,Health 3,Pretech Medi‑Bay,"23,8,0,0",Energy 3,Dungeon|The Bioforge,Heal injuries instany; regenerate tissue in 1d6 hours,Pinnacle of medical advancement,7
+25,0,Safety 0,Watch Posts & Spears,"0,0,0,0",None,None,Prevents ambushes; gives warning,Early‑game survival,0
+26,1,Safety 1,Perimeter Lights & Rifles,"25,6,2,0","Energy 1, Manufacturing 1",None,Guards + basic turrets,Repels basic megafauna,7
+27,2,Safety 2,Automated Drones / Sensor Grid,"26,7,0,0",Energy 2,None,Includes basic radar,Enables proactive defense,7
+28,3,Safety 3,Pretech Shield Projectors,"27,7,0,0","Energy 3, Shelter 2",Dungeon|Halatali Black-Site,Colony‑wide barrier; reduces all raid damage,Huge milestone; late‑game fortress tier,14
+29,0,Shelter 0,Tents / Lean‑tos / Cavern Nests,"0,0,0,0",None,None,Bare protection; weather‑dependent,Start here,0
+30,1,Shelter 1,Wooden Habs & Basic Barracks,"29,6,0,0",Energy 1,None,Protects from cold & light attacks,Unlocks morale boosts,1
+31,2,Shelter 2,Reinforced Compounds / Modular Buildings,"30,3,26,6","Manufacturing 2, Safety 1, Energy 1",None,"Fireproof, Damage-resistant walls",Start of real settlement,1
+32,3,Shelter 3,Architect‑Grade Habitat Domes,"31,8,0,0",Energy 3,Dungeon|House Harkell,Sealed ecosystems; resist artillery,“Late‑game” living space,7

@@ -1,0 +1,14 @@
+id,name,description,is_roleplay,is_storable
+0,None,Nothing,false,false
+1,Money,Hard or soft currency,true,true
+2,Water,Potable Water,false,true
+3,Food,Edible food,false,true
+4,Morale,Chuzpah,false,false
+5,Salvage,Usable metals for craftin,false,true
+6,Biomass,Usable biological/chemical materils for crafting,false,true
+7,Pre-Tech Components,High quality futuristic components,false,true
+8,Shelter,"Buildings, tents, etc. out of the elements",false,false
+9,Health,"Access to supplies, medical know-how",false,false
+10,Safety,"Security, weapons, policing, etc.",false,false
+11,Power,"Electrical energy, ability to do work",false,false
+12,Trade,"Trade goods, services",true,false

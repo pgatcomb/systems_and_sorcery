@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "trigger_probability": 0.1,
+    "required_buildings": [
+      0
+    ],
+    "blocking_buildings": [
+      0
+    ],
+    "required_techs": [
+      0
+    ],
+    "blocking_techs": [
+      0
+    ],
+    "effects": [
+      {
+        "type": "AdjustResource",
+        "data": {
+          "resource_id": 2,
+          "amount": 50.0
+        }
+      }
+    ]
+  }
+]

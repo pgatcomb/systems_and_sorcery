@@ -1,0 +1,26 @@
+id,full_name,tech_required,tech_required_name,resource_costs_names,resource_costs,input_names,input,output_names,output,storage,storage_names,construction_time
+0,Basic Building,0,None,None,"0:0,0:0,0:0,0:0",None,"0:0,0:0,0:0,0:0",None,"0:0,0:0,0:0,0:0","0:0,0:0,0:0,0:0",None,0
+1,Scavenged Generator,6,Energy 1,10 Salvage,"5:10,0:0,0:0,0:0",None,"0:0,0:0,0:0,0:0",10 Power,"11:10,0:0,0:0,0:0","0:0,0:0,0:0,0:0",None,1
+2,Fusion Reactor,7,Energy 2,30 Salvage|1 Pre-Tech,"5:30,7:1,0:0,0:0",None,"0:0,0:0,0:0,0:0",50 Power,"11:50,0:0,0:0,0:0","0:0,0:0,0:0,0:0",None,7
+3,Quantum Tap,8,Energy 3,50 Salvage|5 Pre-Tech,"5:50,7:5,0:0,0:0",None,"0:0,0:0,0:0,0:0",200 Power,"11:200,0:0,0:0,0:0","0:0,0:0,0:0,0:0",None,7
+4,Water Filters & Pumps,14,Water 1,10 Salvage,"5:10,0:0,0:0,0:0",2 Power,"11:2,0:0,0:0,0:0",30 Water,"2:30,0:0,0:0,0:0","2:20,0:0,0:0,0:0",20 Water,1
+5,Atmospheric Condenser,15,Water 2,20 Salvage|5 Biomass,"5:20,6:5,0:0,0:0",5 Power,"11:5,0:0,0:0,0:0",100 Water,"2:100,0:0,0:0,0:0","2:500,0:0,0:0,0:0",500 Water,7
+6,Pre-Tech Purifier,16,Water 3,10 Salvage|3 Pre-Tech,"5:10,7:3,0:0,0:0",10 Power,"11:10,0:0,0:0,0:0",500 Water,"2:500,0:0,0:0,0:0","2:2000,0:0,0:0,0:0",2000 Water,1
+7,Foraging/Trapping Post,10,Food 1,5 Salvage,"5:5,0:0,0:0,0:0",None,"0:0,0:0,0:0,0:0",20 Food,"3:20,0:0,0:0,0:0","3:50,0:0,0:0,0:0",50 Food,1
+8,Hydroponic Trays,11,Food 2,15 Salvage|10 Biomass,"5:15,6:10,0:0,0:0","5 Power, 10 Water","11:5,2:10,0:0,0:0",80 Food,"3:80,0:0,0:0,0:0","3:200,0:0,0:0,0:0",200 Food,7
+9,Bio-Cultivators,12,Food 3,20 Salvage|2 Pre-Tech,"5:20,7:2,0:0,0:0","10 Power, 20 Water","11:10,2:20,0:0,0:0",200 Food,"3:200,0:0,0:0,0:0","3:500,0:0,0:0,0:0",500 Food,14
+10,Plasma Workshop,2,Manufacturing 1,15 Salvage,"5:15,0:0,0:0,0:0",5 Power,"11:5,0:0,0:0,0:0",None,"0:0,0:0,0:0,0:0","0:0,0:0,0:0,0:0",None,2
+11,Basic Fabricator,3,Manufacturing 2,30 Salvage|1 Pre-Tech,"5:30,7:1,0:0,0:0",10 Power,"11:10,0:0,0:0,0:0",None,"0:0,0:0,0:0,0:0","0:0,0:0,0:0,0:0",None,2
+12,Nanite Forge,4,Manufacturing 3,40 Salvage|4 Pre-Tech,"5:40,7:4,0:0,0:0",20 Power,"11:20,0:0,0:0,0:0",None,"0:0,0:0,0:0,0:0","0:0,0:0,0:0,0:0",None,3
+13,Triage Clinic,22,Health 1,5 Salvage|5 Biomass,"5:5,6:5,0:0,0:0","2 Power, 2 Water","11:2,2:2,0:0,0:0",None,"9:30,0:0,0:0,0:0","0:0,0:0,0:0,0:0",None,1
+14,Diagnostic Clinic,23,Health 2,15 Salvage|15 Biomass,"5:15,6:15,0:0,0:0","5 Power, 5 Water","11:5,2:5,0:0,0:0",None,"9:100,0:0,0:0,0:0","0:0,0:0,0:0,0:0",None,5
+15,Pre-Tech Med-Bay,24,Health 3,20 Salvage|3 Pre-Tech,"5:20,7:3,0:0,0:0","15 Power, 10 Water","11:15,2:10,0:0,0:0",None,"9:250,0:0,0:0,0:0","0:0,0:0,0:0,0:0",None,5
+16,Perimeter Lights/Rifles,26,Safety 1,10 Salvage,"5:10,0:0,0:0,0:0",5 Power,"11:5,0:0,0:0,0:0",None,"10:10,0:0,0:0,0:0","0:0,0:0,0:0,0:0",None,1
+17,Sensor Grid & Drones,27,Safety 2,25 Salvage|1 Pre-Tech,"5:25,7:1,0:0,0:0",10 Power,"11:10,0:0,0:0,0:0",None,"10:100,0:0,0:0,0:0","0:0,0:0,0:0,0:0",None,2
+18,Shield Projector,28,Safety 3,50 Salvage|5 Pre-Tech,"5:50,7:5,0:0,0:0",30 Power,"11:30,0:0,0:0,0:0",None,"10:200,0:0,0:0,0:0","0:0,0:0,0:0,0:0",None,7
+19,Communal Hall,18,Morale 1,10 Salvage,"5:10,0:0,0:0,0:0",2 Power,"11:2,0:0,0:0,0:0",None,"4:50,0:0,0:0,0:0","0:0,0:0,0:0,0:0",None,30
+20,Recreation Holotank,19,Morale 2,20 Salvage,"5:20,0:0,0:0,0:0",8 Power,"11:8,0:0,0:0,0:0",None,"4:100,0:0,0:0,0:0","0:0,0:0,0:0,0:0",None,2
+21,Cultural Nexus,20,Morale 3,30 Salvage|2 Pre-Tech,"5:30,7:2,0:0,0:0",15 Power,"11:15,0:0,0:0,0:0",None,"4:200,0:0,0:0,0:0","0:0,0:0,0:0,0:0",None,30
+22,Wooden House,30,Shelter 1,10 Salvage,"5:10,0:0,0:0,0:0",None,"0:0,0:0,0:0,0:0",10 Shelter,"8:10,0:0,0:0,0:0","0:0,0:0,0:0,0:0",None,14
+23,Modular House,31,Shelter 2,20 Salvage,"5:20,0:0,0:0,0:0",2 Power,"11:2:0:0,0:0,0:0",20 Shelter,"8:20,0:0,0:0,0:0","0:0,0:0,0:0,0:0",None,14
+24,Dome Habitat,32,Shelter 3,40 Salvage|2 Pre-Tech,"5:40,7:2,0:0,0:0",10 Power,"11:10,0:0,0:0,0:0",50 Shelter,"8:50,0:0,0:0,0:0","0:0,0:0,0:0,0:0",None,30
