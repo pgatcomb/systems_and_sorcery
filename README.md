@@ -17,6 +17,7 @@ This repository serves as a professional portfolio and technical archive of soft
 
 ### Rust Development
 The Rust directory highlights safety-critical systems and high-concurrency architectures.
+*   **rustyoverlord** A tabletop RPG Settlement Simulator backend with axum/API endpoints
 *   **rust_reactor:** A multithreaded reactor simulation utilizing the Axum framework for API-driven state management.
 *   **rustsqlserver:** A lightweight SQL-backed server demonstrating Rust-to-Python interoperability and asynchronous database handling.
 *   **rusty8:** An emulation of the PDP-8 computer using the command line.
