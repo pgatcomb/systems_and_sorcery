@@ -1,5 +1,6 @@
 mod dataio;
 mod sim;
+
 use dataio::loader::{load_definitions_and_meta, load_game_state_from_json};
 use dataio::saver::save_game_state_to_json;
 use dataio::validator::validate_definitions;
@@ -16,6 +17,8 @@ use std::net::SocketAddr;
 
 use tokio::sync::Mutex;
 use axum::{Router,routing::{get, post},extract::State,Json};
+use tower_http::cors::{CorsLayer};
+use tower_http::cors::Any as CorsAny;
 
 
 struct AppState {
@@ -65,12 +68,18 @@ async fn main() {
         meta,
     });
     
+    let cors = CorsLayer::new()
+        .allow_origin(CorsAny)
+        .allow_methods(CorsAny)
+        .allow_headers(CorsAny);
+
     let app = Router::new()
         .route("/", get(|| async { "This is not the page you're looking for"}))
         .route("/state", get(get_state))
         .route("/order", post(order_handler))
         .route("/commit", post(commit_handler))
         .route("/meta", get(get_meta))
+        .layer(cors)
         .with_state(app_state);
     let addr = SocketAddr::from(([127,0,0,1], 3000));
     println!("Server started on http://{}", addr);
